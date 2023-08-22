@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "Explore question answering",
+    "Language": "English",
+    "Files": [
+	    {
+        "RawFilePath": "https://raw.githubusercontent.com/Zubair8899/AI-900-AIFundamentals/prod/instructions/MSSPL/gs.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Zubair8899/AI-900-AIFundamentals/prod/instructions/MSSPL/Module04d.md",
+        "Order": 2
+      }
+    ]
+  }
+]
