@@ -71,7 +71,7 @@ To test the capabilities of the Anomaly Detector service, we'll use a simple com
 
 1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
 
-      ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img9.png)
+      ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/ai900mod1img9.png)
 
 1. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
 
