@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "Explore translation",
+    "Language": "English",
+    "Files": [
+	    {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/MS-SPL/instructions/MSSPL/gs.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/MS-SPL/instructions/MSSPL/module04b.md",
+        "Order": 2
+      }
+    ]
+  }
+]
