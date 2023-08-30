@@ -11,7 +11,7 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 In this lab, you will test the capabilities of the Custom Vision service, we'll use a simple command-line application that runs in the Cloud Shell.
 
 ## Lab objectives
-
+In this lab, you will perform:
 - Create a Cognitive Services resource
 - Create a Custom Vision project
 - Test the model
