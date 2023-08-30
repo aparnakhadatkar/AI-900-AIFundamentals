@@ -1,5 +1,17 @@
 # Module 04d: Explore question answering 
+
+## Lab overview
+
 For customer support scenarios, it's common to create a bot that can interpret and answer frequently asked questions through a website chat window, email, or voice interface. Underlying the bot interface is a knowledge base of questions and appropriate answers that the bot can search for suitable responses.
+
+## Lab objectives
+In this lab, you will perform:
+- Create a custom question-answering knowledge base
+
+## Estimated timing: 10 minutes
+
+## Architecture Diagram
+![](media/Module4d.png)
 
 ## Exercise 1: Create a custom question-answering knowledge base
 
@@ -233,20 +245,23 @@ The knowledge base provides a back-end service that client applications can use 
 
 1. Use the test chat interface to ensure your bot answers questions from your knowledge base as expected. For example, try submitting **How can I book a flight?**.
 
-     ![](media/azurebot.png)
+   ![](media/azurebot.png)
 
-Experiment with the bot. You'll probably find that it can answer questions from the FAQ quite accurately, but it will have limited ability to interpret questions that it has not been trained with. You can always use the Language Studio to edit the knowledge base to improve it and republish it.
+   >**Note**:  Experiment with the bot. You'll probably find that it can answer questions from the FAQ quite accurately, but it will have limited ability to interpret questions that it has not been trained with. You can always use the Language Studio to edit the knowledge base to improve it and republish it.
 
-**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
-
-### You have successfully completed this lab.
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Hit the Validate button for the corresponding task.
+   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Learn more
 
 - To learn more about the Question Answering service, view [the documentation](https://docs.microsoft.com/azure/cognitive-services/language-service/question-answering/overview).
 - To learn more about the Microsoft Bot Service, view [the Azure Bot Service page](https://azure.microsoft.com/services/bot-service/).
+
+### Review
+In this lab, you have completed:
+- Create a custom question-answering knowledge base
+  
+## You have successfully completed this lab.
