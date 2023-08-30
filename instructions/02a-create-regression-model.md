@@ -7,7 +7,7 @@ In this lab, you will train a regression model that predicts the price of an aut
 - Creating a compute and running pipelines by adding data.
 - Deploying and evaluating a model.
 
-## Lab objectives
+## Lab objective
 In this lab, you will perform:
 
 + Exercise 1: Create an Azure Machine Learning workspace
