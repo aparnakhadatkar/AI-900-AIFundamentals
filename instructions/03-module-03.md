@@ -16,7 +16,7 @@ In this lab, you will perform:
 + Run Cloud Shell
 + Configure and run a client application
   
-## Estimated timing: 10 minutes
+## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 
