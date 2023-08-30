@@ -1,10 +1,22 @@
 # Module 4a: Explore Speech
 
+## Lab overview
+
 To build software that can interpret audible speech and respond appropriately, you can use the **Speech** cognitive service, which provides a simple way to transcribe spoken language into text and vice-versa.
 
 For example, suppose you want to create a smart device that can respond verbally to spoken questions, such as "What time is it?" The response should be the local time.
 
 To test the capabilities of the Speech service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
+
+## Lab objectives
+In this lab, you will perform:
+- Create a Cognitive Services resource
+- Configure and run a client application.
+
+## Estimated timing: 10 minutes
+
+## Architecture Diagram
+![](media/Module4a.png)
 
 ## Task 1: Create a Cognitive Services resource
 
@@ -114,15 +126,19 @@ Now that you have a custom model, you can run a simple client application that u
    
            https://www.microsoft.com/videoplayer/embed/RWMSIU
        
-
-    **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-    > - Hit the Validate button for the corresponding task.  
-    > - If you receive a success message, you can proceed to the next task.If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-## Learn more
+### Learn more
 
 This simple app shows only some of the capabilities of the Speech service. To learn more about what you can do with this service, see the [Speech page](https://azure.microsoft.com/services/cognitive-services/speech-services/).
 
-### You have successfully completed this lab.
+### Review
+In this lab, you have completed:
+- Create a Cognitive Services resource
+- Configure and run a client application.
+
+## You have successfully completed this lab.
