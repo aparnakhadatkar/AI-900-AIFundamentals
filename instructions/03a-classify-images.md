@@ -2,7 +2,7 @@
 
 ## Lab overview
 
-The *Computer Vision* cognitive service provides useful pre-built models for working with images, but you'll often need to train your own model for computer vision. For example, suppose a wildlife conservation organization organization wants to track sightings of animals by using motion-sensitive cameras. The images captured by the cameras could then be used to verify the presence of particular species in a particular area and assist with conservation efforts for endangered species. To accomplish this, the organization would benefit from an *image classification* model that is trained to identify different species of animal in the captured photographs.
+The *Computer Vision* cognitive service provides useful pre-built models for working with images, but you'll often need to train your own model for computer vision. For example, suppose a wildlife conservation organization wants to track sightings of animals by using motion-sensitive cameras. The images captured by the cameras could then be used to verify the presence of particular species in a particular area and assist with conservation efforts for endangered species. To accomplish this, the organization would benefit from an *image classification* model that is trained to identify different species of animal in the captured photographs.
 
 In Azure, you can use the ***Custom Vision*** cognitive service to train an image classification model based on existing images. There are two elements to creating an image classification solution. First, you must train a model to recognize different classes using existing images. Then, when the model is trained you must publish it as a service that can be consumed by applications.
 
@@ -63,7 +63,7 @@ To train an object detection model, you need to create a Custom Vision project b
 
     ![Screenshot of the Image upload interface.](media/create-image-classification-system/upload-elephants(1).png)
 
-1. Use the **Add images** ([+]) button to upload, and select all the image from the **giraffe** folder, then upload image with the tag *giraffe*. Select all the images from the **lion** folder, then upload iamge with the tag **lion**.
+1. Use the **Add images** ([+]) button to upload, and select all the image from the **giraffe** folder, then upload image with the tag *giraffe*. Select all the images from the **lion** folder, then upload image with the tag **lion**.
 
 1. Explore the images you have uploaded in the Custom Vision project - there should be 17 images of each class, like this:
 
