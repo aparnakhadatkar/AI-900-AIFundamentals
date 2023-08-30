@@ -59,8 +59,7 @@ Let us start by creating an **Anomaly Detector** resource in your Azure subscrip
    
      ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img5.png)
    
-      >**Note :** 
-      > Copy and save the **KEY 1** and **Enpoint** value to NotePad for future reference to connect from client applications. 
+      >**Note**: Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications. 
 
 ### Task 2: Run Cloud Shell
 
@@ -100,8 +99,7 @@ Now that you have a Cloud Shell environment, you can run a simple application th
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
     
-    >**Note :** 
-    >To Paste the Code right click inside the cloud Shell and then Click on Paste.
+    >**Note**: To Paste the Code right click inside the cloud Shell and then Click on Paste.
 
 1. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
 
@@ -117,10 +115,9 @@ Now that you have a Cloud Shell environment, you can run a simple application th
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img11.png)
 
-1. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Anomaly Detector resource. Copy these from the **Keys and Endpoints** page for your resource (Exercise 1, Task 1, Step 7) and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Enpoint* placeholder values, respectively.
+1. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Anomaly Detector resource. Copy these from the **Keys and Endpoints** page for your resource (Exercise 1, Task 1, Step 7) and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Endpoint* placeholder values, respectively.
 
-    > **Tip :**
-    > You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
+    > **Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
     
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img5.png)
   
