@@ -365,13 +365,13 @@ One way to evaluate a regression model is to compare the predicted labels to the
             return scored_results
         ```
 
-1. Connect the output from the **Score Model** module to the **Dataset1** (left-most) input of the **Execute Python Script**, and connect the left output(Result Dataset) of the **Execute Python Script** module to the (outpout data) of the **Web Service Output**.
+1. Connect the output from the **Score Model** module to the **Dataset1** (left-most) input of the **Execute Python Script**, and connect the left output(Result Dataset) of the **Execute Python Script** module to the (output data) of the **Web Service Output**.
 
 1. Verify that your pipeline looks similar to the following image:
 
     ![Screenshot of the automobile inference pipeline.](media/inference-pipeline-lab-2a.png)
 
-1. Submit the pipeline as a new experiment named **mslearn-auto-inference** on your compute cluster. The experiment may take a while to run (Make sure you have selected cumpute cluster).
+1. Submit the pipeline as a new experiment named **mslearn-auto-inference** on your compute cluster. The experiment may take a while to run (Make sure you have selected compute cluster).
 
 1. When the pipeline has completed, select **Job detail**. In the new tab, right click on the **Execute Python Script** module. Select **Preview data** and then **Result dataset** to see the predicted prices for the three cars in the input data.
 
