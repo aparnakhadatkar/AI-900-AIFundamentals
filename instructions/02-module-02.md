@@ -8,7 +8,7 @@ In this lab, you will use a dataset of historical bicycle rental details to trai
 
 In this lab, you will perform:
 
-+ Exercise 1: Create an Azure Machine Learning workspace
++ Create an Azure Machine Learning workspace
 
 ## Estimated timing: 10 minutes
 
