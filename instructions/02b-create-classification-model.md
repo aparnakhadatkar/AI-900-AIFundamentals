@@ -7,7 +7,7 @@ In this lab, you will train a regression model that predicts the price of an aut
 ## Lab objective
 In this lab, you will perform:
 
-+ Exercise 1: Create an Azure Machine Learning workspace in the Azure portal
++ Create an Azure Machine Learning workspace in the Azure portal
 
 ## Estimated timing: 10 minutes
 
