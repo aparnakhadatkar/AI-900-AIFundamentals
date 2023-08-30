@@ -12,7 +12,7 @@ To test the capabilities of the Translator service, we'll use a simple command-l
 In this lab, you will perform:
 + Create a *Cognitive Services* resource
 
-## Estimated timing: 10 minutes
+## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 ![](media/Module4b.png)
