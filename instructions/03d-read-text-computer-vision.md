@@ -31,7 +31,7 @@ You can use the Computer Vision service by creating either a **Computer Vision**
 
    ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img1.png)
    
-1. In the Marketplace page search for **Cognitave Services** and Select **Cognitive Services**.
+1. In the Marketplace page search for **Cognitive Services** and Select **Cognitive Services**.
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod3bimg1.png)
      
@@ -55,7 +55,7 @@ You can use the Computer Vision service by creating either a **Computer Vision**
 
 1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Cognitive Service.
 
-1. View the **Keys and Endpoint** page for your Cognitive Services resource. Copy and save the **KEY 1** and **Enpoint** value to NotePad for future reference to connect from client applications. 
+1. View the **Keys and Endpoint** page for your Cognitive Services resource. Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications. 
 
     ![Find the key and endpoint tab in your Cognitive Services resource's left hand pane.](media/read-text-computer-vision/ai900_mod03d_t3_s4.png)
 
@@ -73,7 +73,7 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
     ![Create storage by clicking confirm.](media/read-text-computer-vision/create-a-storage.png)
 
-1. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
+1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
 
     ![How to find the left hand drop down menu to switch to PowerShell](media/analyze-images-computer-vision-service/powershell-portal-guide-3(1).png)
 
@@ -105,7 +105,7 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The editor containing code to analyze text in images.](media/read-text-computer-vision/ai900_mod03d_t3_s3.png)
 
-1. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource (Task 1, Step 8) and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Enpoint* placeholder values, respectively.
+1. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource (Task 1, Step 8) and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Endpoint* placeholder values, respectively.
 
   
     > **Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
