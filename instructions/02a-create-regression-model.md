@@ -9,20 +9,8 @@ In this lab, you will train a regression model that predicts the price of an aut
 
 ## Lab objectives
 
-+ Task 1: Create an Azure Machine Learning workspace
-+ Task 2: Create compute
-+ Task 3: Create a pipeline in Designer 
-+ Task 4:  Add and explore a dataset
-+ Task 5: Add data transformations
-+ Task 6: Run the pipeline
-+ Task 7: Create training pipeline
-+ Task 8: Run the training pipeline
-+ Task 9: Evaluate model
-+ Task 10: Create and run an inference pipeline
-+ Task 11: Deploy model
-+ Task 12: Deploy a service
-+ Task 13: Test the service
-
++ Exercise 1: Create an Azure Machine Learning workspace
+  
 ## Estimated timing: 10 minutes
 
 ## Architecture Diagram
@@ -489,13 +477,5 @@ After you've created and tested an inference pipeline for real-time inferencing,
 ### Review
 In this lab, you have completed:
 - Create an Azure Machine Learning workspace
-- Create compute and pipeline in Designer 
-- Add and explore a dataset and data transformations
-- Run the pipeline
-- Create and run training pipeline
-- Evaluate model
-- Create and run an inference pipeline
-- Deploy model and service
-- Test the service
-
+  
 ## You have successfully completed this lab.
