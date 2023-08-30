@@ -9,6 +9,21 @@ To test the capabilities of the Anomaly Detection service, we'll use a simple co
 > **Note :**
 > The goal of this exercise is to get a general sense of how cognitive services are provisioned and used. Anomaly Detector is used as an example, but you are not expected to gain a comprehensive knowledge of anomaly detection in this exercise!
 
+
+## Lab overview
+
+In this lab, you will learn how cognitive services are provisioned and used. 
+
+## Lab objectives
+  
+After completing this lab, you will be able to create an Anomaly Detector resource
+
+## Estimated timing: 10 minutes
+
+## Architecture Diagram
+
+  ![](media/Module1.1.png)
+
 ## Exercise 1: Create an Anomaly Detector resource
 
 ### Task 1: Create an Anomaly Detector resource
@@ -127,7 +142,7 @@ Now that you have a Cloud Shell environment, you can run a simple application th
       
       >**Note**: If you will be not able to find this option, you can use also Shortcut Keys **Ctrl + S** to save and **Ctrl + Q** to close the editor.
       
-    Remember, anomaly detection is an artificial intelligence technique used to determine whether values in a series are within expected parameters. The sample client application will use your Anomaly Detector service to analyze a file containing a series of date/times and numeric values. The application should return results indicating at each time point, whether the numeric value is within expected parameters.
+      >**Note**: Remember, anomaly detection is an artificial intelligence technique used to determine whether values in a series are within expected parameters. The sample client application will use your Anomaly Detector service to analyze a file containing a series of date/times and numeric values. The application should return results indicating at each time point, whether the numeric value is within expected parameters.
 
 1. In the PowerShell pane, enter the following commands to run the code:
 
@@ -142,14 +157,18 @@ Now that you have a Cloud Shell environment, you can run a simple application th
      
       ![Picture1](media/Ai900-mod1-img9.png)
       
-  **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
-
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Hit the Validate button for the corresponding task.
+   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Learn more
 
 This simple app shows only some of the capabilities of the Anomaly Detector service. To learn more about what you can do with this service, see the [Anomaly Detector page](https://learn.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/overview).
+
+### Review
+In this lab, you have completed:
+- Create an Anomaly Detector resource
+  
+## You have successfully completed this lab.
