@@ -147,7 +147,7 @@ To get started with Azure Machine Learning Designer, first you must create a pip
 
 ### Task 5: Load data to a canvas
 
-1. Return to your pipeline by selecting **Designer** on the left-hand menu. On the **Designer** page, select the **Diabetes Training** pipeline (Under **pipline Drafts**).
+1. Return to your pipeline by selecting **Designer** on the left-hand menu. On the **Designer** page, select the **Diabetes Training** pipeline (Under **pipeline Drafts**).
 
 1. Then in the project, next to the pipeline name on the left, select the arrows icon to expand the panel if it is not already expanded. The panel should open by default to the **Asset library** pane, indicated by the books icon at the top of the panel. Note that there is a search bar to locate assets. Notice two buttons, **Data** and **Component**.
 
@@ -208,7 +208,7 @@ To apply your data transformations, you need to run the pipeline as an experimen
 
     ![Screenshot of designer asset library with the completed job and job details button below.](media/create-classification-model/completed-job1.png)
 
-    >**Note**: Notice that theleft-handd panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**.
+    >**Note**: Notice that the left-handd panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**.
 
     >**Note**: If the error occurs and states that the data type is already in the collection, submit the pipeline again and re-run it.
 
