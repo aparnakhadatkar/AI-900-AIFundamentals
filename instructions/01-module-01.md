@@ -168,6 +168,6 @@ This simple app shows only some of the capabilities of the Anomaly Detector serv
 ### Review
 In this lab, you have completed:
 
-- Exercise 1: Create an Anomaly Detector resource
+- Create an Anomaly Detector resource
  
 ## You have successfully completed this lab.
