@@ -16,7 +16,7 @@ In this lab, you will perform:
 
 + Create an Anomaly Detector resource
 
-## Estimated timing: 10 minutes
+## Estimated timing: 120 minutes
 
 ## Architecture Diagram
 
