@@ -15,7 +15,7 @@ In this lab, you will perform:
 - Create a Cognitive Services resource
 - Create a Custom Vision project
 
-## Estimated timing: 10 minutes
+## Estimated timing: 120 minutes
 
 ## Architecture Diagram
 
