@@ -99,6 +99,7 @@ In this lab, you will perform:
        > - Hit the Validate button for the corresponding task.
        > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
        > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ### Task 3: Create a pipeline in designer
 
 To get started with Azure Machine Learning Designer, first, you must create a pipeline.
@@ -270,7 +271,7 @@ To apply your data transformations, you need to run the pipeline as an experimen
 
     ![Screenshot of designer asset library with the completed job and job details button below.](media/create-classification-model/completed-job1.png)
 
-    >**Note**: Notice that theleft-hand panel is now on the **Submitted jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**.
+    >**Note**: Notice that the left-hand panel is now on the **Submitted jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**.
 
 ### Task 8: View the transformed data
 
@@ -404,7 +405,7 @@ Now you're ready to run the training pipeline and train the model.
 
     ![Screenshot changes made to the pipeline including which components to add and remove marked in red.](media/inference-changes-2c.png)
 
-    - Add a **web service input**if it's not there from the component unde assets library drag and drop for new data to be submitted.
+    - Add a **web service input**if it's not there from the component under assets library drag and drop for new data to be submitted.
     - Replace the **penguin-data** dataset with an **Enter Data Manually** module that doesn't include the **Species** column.
     - Remove the **Select Columns in Dataset** module, which is now redundant.
     - Connect the **Web Service Input** and **Enter Data Manually** modules (which represent inputs for data to be clustered) to the first **Apply Transformation** module.
