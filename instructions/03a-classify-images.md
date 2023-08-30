@@ -15,7 +15,7 @@ In this lab, you will perform:
 - Test the model
 - Prepare a client application and test it
 
-## Estimated timing: 10 minutes
+## Estimated timing: 120 minutes
 
 ## Architecture Diagram
 ![](media/Module3a.png)
