@@ -14,7 +14,7 @@ To test the capabilities of the Form Recognizer service, we'll use a simple comm
 In this lab, you will perform:
 + Create a *Cognitive Services* resource
 
-## Estimated timing: 10 minutes
+## Estimated timing: 120 minutes
 
 ## Architecture Diagram
 ![](media/Module3e.png)
