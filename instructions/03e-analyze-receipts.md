@@ -41,7 +41,7 @@ If you haven't already done so, create a **Cognitive Services** resource in your
    
 1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Cognitive Service.
 
-1. View the **Keys and Endpoint** page for your Cognitive Services resource. Copy and save the **KEY 1** and **Enpoint** value to NotePad for future reference to connect from client applications. 
+1. View the **Keys and Endpoint** page for your Cognitive Services resource. Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications. 
 
 ### Task 2: Run Cloud Shell
 
@@ -57,7 +57,7 @@ To test the capabilities of the Form Recognizer service, we'll use a simple comm
     
     ![Screenshot of the cloud shell in the Azure portal.](media/stoarge-up.png)
 
-1. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
+1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
 
     ![How to find the left hand drop down menu to switch to PowerShell](media/analyze-receipts/powershell-portal-guide-03.png) 
 
@@ -89,7 +89,7 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The editor containing code to analyze fields in a receipt.](media/analyze-receipts/recognize-receipt-code06.png)
 
-1. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource.  Copy these from the **Keys and Endpoints** page for your resource (Task 1, Step 5) and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Enpoint* placeholder values, respectively.
+1. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource.  Copy these from the **Keys and Endpoints** page for your resource (Task 1, Step 5) and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Endpoint* placeholder values, respectively.
 
     > **Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
 
