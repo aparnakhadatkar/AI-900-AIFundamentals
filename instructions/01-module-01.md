@@ -14,7 +14,7 @@ In this lab, you will learn how cognitive services are provisioned and used.
 
 ## Lab objectives
   
-In this lab, you will complete the following tasks:
+In this lab, you will perform:
 
 Exercise 1: Create an Anomaly Detector resource
 
