@@ -13,7 +13,7 @@ In this lab, you will perform:
 - Create a Cognitive Services resource
 - Configure and run a client application.
 
-## Estimated timing: 10 minutes
+## Estimated timing: 120 minutes
 
 ## Architecture Diagram
 ![](media/Module4a.png)
