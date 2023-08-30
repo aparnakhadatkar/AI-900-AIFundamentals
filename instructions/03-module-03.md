@@ -12,9 +12,9 @@ In this lab, you'll use a simple command-line application to see the Computer Vi
 
 ## Lab objectives
 In this lab, you will perform:
-+ Task 1: Create a Cognitive Services resource
-+ Task 2: Run Cloud Shell
-+ Task 3: Configure and run a client application
++ Create a Cognitive Services resource
++ Run Cloud Shell
++ Configure and run a client application
   
 ## Estimated timing: 10 minutes
 
