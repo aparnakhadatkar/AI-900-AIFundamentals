@@ -8,7 +8,23 @@ In this lab, you'll use a simple command-line application to see the Computer Vi
 - Creating Azure Cognitive Services and Azure Storage Account.
 - Configuring and running a client application.
 
-## Task 1: Create a *Cognitive Services* resource
+## Lab scenario
+
+In this lab, you'll use a simple command-line application to see the Computer Vision service in action. The same principles and functionality apply in real-world solutions, such as web sites or phone apps. 
+
+## Lab objectives
+In this lab, you will perform:
++ Task 1: Create a Cognitive Services resource
++ Task 2: Run Cloud Shell
++ Task 3: Configure and run a client application
+  
+## Estimated timing: 10 minutes
+
+## Architecture Diagram
+
+![](media/Module3.png)
+ 
+### Task 1: Create a *Cognitive Services* resource
 
 You can use the Computer Vision service by creating either a **Computer Vision** resource or a **Cognitive Services** resource.
 
@@ -28,10 +44,9 @@ You can use the Computer Vision service by creating either a **Computer Vision**
 
 1. View the **Keys and Endpoint** page from the left pane under Resource Management for your Cognitive Services resource. You will need the endpoint and keys to connect from client applications.
 
-   >**Note :** 
-      > Copy and save the **KEY 1** and **Enpoint** value to NotePad for future reference to connect from client applications. 
+   >**Note**: Copy and save the **KEY 1** and **Enpoint** value to NotePad for future reference to connect from client applications. 
 
-## Task 2: Run Cloud Shell
+### Task 2: Run Cloud Shell
 
 To test the capabilities of the Computer Vision service, we'll use a simple command-line application that runs in the Cloud Shell on Azure.
 
@@ -53,7 +68,7 @@ To test the capabilities of the Computer Vision service, we'll use a simple comm
 
     ![Wait for PowerShell to start.](media/analyze-images-computer-vision-service/powershell-prompt(1).png)
 
-## Task 3: Configure and run a client application
+### Task 3: Configure and run a client application
 
 Now that you have a Cloud Shell environment, you can run a simple application that uses the Computer Vision service to analyze an image.
 
@@ -82,8 +97,7 @@ Now that you have a Cloud Shell environment, you can run a simple application th
 
 1. Don't worry too much about the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Enpoint* placeholder values respectively.
 
-    > **Tip:**
-    > You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
+    > **Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
     
    After pasting the key and endpoint values, the first two lines of code should look similar to this:
 
@@ -136,13 +150,21 @@ Now that you have a Cloud Shell environment, you can run a simple application th
 
 1. Review the results of the image analysis for the third image.
 
- **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at [labs-support@spektrasystems.com](labs-support@spektrasystems.com).We are available 24/7 to help you out.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Learn more
 
 This simple app shows only some of the capabilities of the Computer Vision service. To learn more about what you can do with this service, see the [Computer Vision page](https://azure.microsoft.com/services/cognitive-services/computer-vision/).
+
+### Review
+In this lab, you have completed:
+- Create a Cognitive Services resource
+- Run Cloud Shell
+- Configure and run a client application
+  
+## You have successfully completed this lab.
+  
