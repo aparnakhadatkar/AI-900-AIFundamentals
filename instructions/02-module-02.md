@@ -6,7 +6,7 @@ In this lab, you will use a dataset of historical bicycle rental details to trai
 
 ## Lab objective
 
-In this lab, you will complete the following tasks:
+In this lab, you will perform:
 
 + Exercise 1: Create an Azure Machine Learning workspace
 
