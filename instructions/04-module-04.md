@@ -13,7 +13,7 @@ To test the capabilities of the Language service, we'll use a simple command-lin
 ## Lab objectives
 + Create a Cognitive Services resource
   
-## Estimated timing: 10 minutes
+## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 ![](media/Module4.png)
