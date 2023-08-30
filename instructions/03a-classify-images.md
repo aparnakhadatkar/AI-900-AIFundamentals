@@ -6,12 +6,27 @@ In Azure, you can use the ***Custom Vision*** cognitive service to train an imag
 
 To test the capabilities of the Custom Vision service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or mobile apps.
 
-## Task 1: Create a Cognitive Services resource
+## Lab scenario
+
+In this lab, you will test the capabilities of the Custom Vision service, we'll use a simple command-line application that runs in the Cloud Shell.
+
+## Lab objectives
+
+- Create a Cognitive Services resource
+- Create a Custom Vision project
+- Test the model
+- Prepare a client application and test it
+
+## Estimated timing: 10 minutes
+
+## Architecture Diagram
+![](media/Module3a.png)
+
+### Task 1: Create a Cognitive Services resource
 
 You can use the Custom Vision service by creating either a **Custom Vision** resource or a **Cognitive Services** resource.
 
->**Note :**
->Not every resource is available in every region. Whether you create a Custom Vision or Cognitive Services resource, only resources created in [certain regions](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services) can be used to access Custom Vision services. For simplicity, a region is pre-selected for you in the configuration instructions below.
+>**Note**: Not every resource is available in every region. Whether you create a Custom Vision or Cognitive Services resource, only resources created in [certain regions](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services) can be used to access Custom Vision services. For simplicity, a region is pre-selected for you in the configuration instructions below.
 
 Create a **Cognitive Services** resource in your Azure subscription.
 
@@ -24,9 +39,10 @@ Create a **Cognitive Services** resource in your Azure subscription.
     - **By checking this box I acknowledge that I have read and understood all the terms below**: Selected
 
 1.  Click on **Review and create**. 
+
 1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
 
-## Task 2: Create a Custom Vision project
+### Task 2: Create a Custom Vision project
 
 To train an object detection model, you need to create a Custom Vision project based on your training resource. To do this, you'll use the Custom Vision portal.
 
@@ -66,11 +82,10 @@ To train an object detection model, you need to create a Custom Vision project b
 1. When the model iteration has been trained, review the *Precision*, *Recall*, and *AP* performance metrics - these measure the prediction accuracy of the classification model, and should all be high.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-   > - Hit the Validate button for the corresponding task.  
-   > - If you receive a success message, you can proceed to the next task.If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Hit the Validate button for the corresponding task.
+   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
       
 ## Task 3: Test the model
 
@@ -86,7 +101,7 @@ Before publishing this iteration of the model for applications to use, you shoul
 
 1. Close the **Quick Test** window.
 
-## Task 4: Publish the image classification model
+### Task 4: Publish the image classification model
 
 Now you're ready to publish your trained model and use it from a client application.
 
@@ -98,15 +113,15 @@ Now you're ready to publish your trained model and use it from a client applicat
 
     ![Screenshot of the Quick Test interface.](media/create-image-classification-system/prediction.png)
 
-   >**Note**: Later, you will need the appropriate URL and Prediction-Key values to get a prediction from an Image URL, so keep this dialog box open and carry on to the next task.
+    >**Note**: Later, you will need the appropriate URL and Prediction-Key values to get a prediction from an Image URL, so keep this dialog box open and carry on to the next task.
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-   > - Hit the Validate button for the corresponding task.  
-   > - If you receive a success message, you can proceed to the next task.If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-## Task 5: Prepare a client application
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+### Task 5: Prepare a client application
 
 To test the capabilities of the Custom Vision service, we'll use a simple command-line application that runs in the cloud shell on Azure.
 
@@ -128,7 +143,7 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
     Note that you can resize the cloud shell by dragging the separator bar at the top of the pane, or by using the **&#8212;**, **&#9723;**, and **X** icons at the top right of the pane to minimize, maximize, and close the pane. For more information about using the Azure Cloud Shell, see the [Azure Cloud Shell documentation](https://docs.microsoft.com/azure/cloud-shell/overview).
 
-2. In the command shell, enter the following commands to download the files for this exercise and save them in a folder named **ai-900** (after removing that folder if it already exists)
+1. In the command shell, enter the following commands to download the files for this exercise and save them in a folder named **ai-900** (after removing that folder if it already exists)
 
     ```PowerShell
     rm -r ai-900 -f
@@ -138,7 +153,7 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
 
-3. After the files have been downloaded, enter the following commands to change to the **ai-900** directory and edit the code file for this exercise:
+1. After the files have been downloaded, enter the following commands to change to the **ai-900** directory and edit the code file for this exercise:
 
     ```PowerShell
     cd ai-900
@@ -150,28 +165,25 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
     Notice how this opens an editor like the one in the image below:
 
-     ![Screenshot of the code editor in the cloud shell.](media/create-image-classification-system/code-editor1.png)
+    ![Screenshot of the code editor in the cloud shell.](media/create-image-classification-system/code-editor1.png)
 
-     > **Tip**: You can use the separator bar between the cloud shell command line and the code editor to resize the panes.
+    > **Tip**: You can use the separator bar between the cloud shell command line and the code editor to resize the panes.
 
-4. Don't worry too much about the details of the code. The important thing is that it starts with some code to specify the prediction URL and key for your Custom Vision model. You'll need to update these so that the rest of the code uses your model.
+1. Don't worry too much about the details of the code. The important thing is that it starts with some code to specify the prediction URL and key for your Custom Vision model. You'll need to update these so that the rest of the code uses your model.
 
-    Get the *prediction URL* and *prediction key* from the dialog box you left open in the browser tab for your **Custom Vision project**. You need the versions to be used *if you have an image URL*.
+    - Get the *prediction URL* and *prediction key* from the dialog box you left open in the browser tab for your **Custom Vision project**. You need the versions to be used *if you have an image URL*.
 
-    Use these values to replace the **YOUR_PREDICTION_URL** and **YOUR_PREDICTION_KEY** place holders in the code file.
+    - Use these values to replace the **YOUR_PREDICTION_URL** and **YOUR_PREDICTION_KEY** place holders in the code file.
 
-    After pasting the Prediction URL and Prediction Key values, the first two lines of code should look similar to this:
+    - After pasting the Prediction URL and Prediction Key values, the first two lines of code should look similar to this:
 
     
      > $predictionUrl="https..."   
      > $predictionKey ="1a2b3c4d5e6f7g8h9i0j...."
 
-   
-       
+1. After making the changes to the variables in the code, press **CTRL+S** to save the file. Then press **CTRL+Q** to close the code editor.
 
-6. After making the changes to the variables in the code, press **CTRL+S** to save the file. Then press **CTRL+Q** to close the code editor.
-
-## Task 6: Test the client application
+### Task 6: Test the client application
 
 Now you can use the sample client application to classify images based on the animal they contain.
 
@@ -211,17 +223,23 @@ Now you can use the sample client application to classify images based on the an
 
 1. Verify that the model classifies this image as **lion**.
 
-Hopefully, your image classification model correctly classified all three images.
+   Hopefully, your image classification model correctly classified all three images.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-   > - Hit the Validate button for the corresponding task.  
-   > - If you receive a success message, you can proceed to the next task.If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Hit the Validate button for the corresponding task.
+   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### You have successfully completed this lab.
-
-
-## Learn more
+### Learn more
 
 This exercise shows only some of the capabilities of the Custom Vision service. To learn more about what you can do with this service, see the [Custom Vision page](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/).
+
+### Review
+In this lab, you have completed:
+- Create a Cognitive Services resource
+- Create a Custom Vision project
+- Test the model
+- Prepare a client application and test it
+
+## You have successfully completed this lab.
