@@ -7,11 +7,12 @@ Increasingly, we expect computers to be able to use AI to understand spoken or t
 To test the capabilities of the Conversational Language Understanding service, we'll use a command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or phone apps.
 
 ## Lab objectives
+
 In this lab, you will perform:
 - Create and use a Language Service resource
 - Configure and run a client application
 
-## Estimated timing: 10 minutes
+## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 ![](media/Module4c.1.png)
