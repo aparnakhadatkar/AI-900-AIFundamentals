@@ -1,10 +1,33 @@
 # Module 02a: Explore regression with Azure Machine Learning Designer
 
+## Lab overview
+
 In this lab, you will train a regression model that predicts the price of an automobile based on its characteristics. This includes:
 - Creating a Machine Learning Workspace.
 - Creating a compute and running pipelines by adding data.
 - Deploying and evaluating a model.
 
+## Lab objectives
+
++ Task 1: Create an Azure Machine Learning workspace
++ Task 2: Create compute
++ Task 3: Create a pipeline in Designer 
++ Task 4:  Add and explore a dataset
++ Task 5: Add data transformations
++ Task 6: Run the pipeline
++ Task 7: Create training pipeline
++ Task 8: Run the training pipeline
++ Task 9: Evaluate model
++ Task 10: Create and run an inference pipeline
++ Task 11: Deploy model
++ Task 12: Deploy a service
++ Task 13: Test the service
+
+## Estimated timing: 10 minutes
+
+## Architecture Diagram
+![](media/Module2a.1.png)
+ 
 ## Exercise 1: Create an Azure Machine Learning workspace  
 
 ### Task 1: Create an Azure Machine Learning workspace  
@@ -42,14 +65,13 @@ In this lab, you will train a regression model that predicts the price of an aut
 
 1. In Azure Machine Learning studio, you should see your newly created workspace **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" />**. If that is not the case, select your Azure directory in the left-hand menu. Then from the new left-hand menu select **Workspaces**, where all the workspaces associated to your directory are listed, and select the one you created for this exercise.
 
-   ![Picture1](media/ai900mod2cimg4.png)
+    ![Picture1](media/ai900mod2cimg4.png)
    
-   **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-
-   > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 2: Create compute
 
@@ -78,17 +100,18 @@ In this lab, you will train a regression model that predicts the price of an aut
 
         ![Picture1](media/ai900mod2cimg7.png)
         
-> **Note :**
-> Compute instances and clusters are based on standard Azure virtual machine images. For this module, the *Standard_DS11_v2* image is recommended to achieve the optimal balance of cost and performance. If your subscription has a quota that does not include this image, choose an alternative image; but bear in mind that a larger image may incur higher cost and a smaller image may not be sufficient to complete the tasks. Alternatively, ask your Azure administrator to extend your quota.
+   > **Note**: Compute instances and clusters are based on standard Azure virtual machine images. For this module, the *Standard_DS11_v2* image is 
+     recommended to achieve the optimal balance of cost and performance. If your subscription has a quota that does not include this image, choose an 
+     alternative image; but bear in mind that a larger image may incur higher cost and a smaller image may not be sufficient to complete the tasks. 
+     Alternatively, ask your Azure administrator to extend your quota.
 
-The compute cluster will take some time to be created. You can move onto the next task while it's being created.
+   > **Note**: The compute cluster will take some time to be created. You can move onto the next task while it's being created.
 
-  **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-
-   > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Hit the Validate button for the corresponding task.
+   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 3: Create a pipeline in Designer 
 
@@ -136,41 +159,40 @@ You typically apply data transformations to prepare the data for modeling. In th
 
 1. In the **Asset library** pane on the left, click on **Component**, which contain a wide range of modules you can use for data transformation and model training. You can also use the search bar to quickly locate modules.
 
-2. Search for a **Select Columns in Dataset** module and place it to the canvas, below the **Automobile price data (Raw)** module. Then connect the output at the bottom of the **Automobile price data (Raw)** module to the input at the top of the **Select Columns in Dataset** module, like this:
+1. Search for a **Select Columns in Dataset** module and place it to the canvas, below the **Automobile price data (Raw)** module. Then connect the output at the bottom of the **Automobile price data (Raw)** module to the input at the top of the **Select Columns in Dataset** module, like this:
 
     ![Screenshot of the Automobile price data dataset connected to the Select Columns in Dataset module.](media/dataset-select-columns-2a.png)
 
-3. Double click on the **Select Columns in Dataset** module to access a settings pane on the right. Select **Edit column**. Then in the **Select columns** window, select **By name** and click on **Add all** to add all the columns. Then remove **normalized-losses**, so your final column selection looks like this:
+1. Double click on the **Select Columns in Dataset** module to access a settings pane on the right. Select **Edit column**. Then in the **Select columns** window, select **By name** and click on **Add all** to add all the columns. Then remove **normalized-losses**, so your final column selection looks like this:
 
     ![Screenshot of all columns other than normalized_losses.](media/select-columns-2a.png)
 
-4. Click on the **Save** button then **close** Select Columns in Dataset pane.
+1. Click on the **Save** button then **close** Select Columns in Dataset pane.
 
-    In the rest of this exercise, you go through steps to create a pipeline that looks like this:
+    - In the rest of this exercise, you go through steps to create a pipeline that looks like this:
 
-   ![Screenshot of the Automobile price data dataset with Normalize Data module.](media/data-transforms-2a.png)
+      ![Screenshot of the Automobile price data dataset with Normalize Data module.](media/data-transforms-2a.png)
 
-Follow the remaining steps, use the image for reference as you add and configure the required modules.
+      > **Note**: Follow the remaining steps, use the image for reference as you add and configure the required modules.
 
-5. In the **Asset library**, search for a **Clean Missing Data** module and place it under the **Select Columns in Dataset** module on the canvas. Then connect the output from the **Select Columns in Dataset** module to the input of the **Clean Missing Data** module.
+1. In the **Asset library**, search for a **Clean Missing Data** module and place it under the **Select Columns in Dataset** module on the canvas. Then connect the output from the **Select Columns in Dataset** module to the input of the **Clean Missing Data** module.
 
-6. Double click the **Clean Missing Data** module, and in the pane on the right, click **Edit column**. Then in the **Columns to be cleaned** window, select **With rules**, in the **Include** list select **Column names**, in the box of column names enter **bore**, **stroke**, and **horsepower**. Then, click on **Save**. The below screenshot has been provided for your reference: 
+1. Double click the **Clean Missing Data** module, and in the pane on the right, click **Edit column**. Then in the **Columns to be cleaned** window, select **With rules**, in the **Include** list select **Column names**, in the box of column names enter **bore**, **stroke**, and **horsepower**. Then, click on **Save**. The below screenshot has been provided for your reference: 
 
       ![Picture1](media/ai900lab2aimg3.png)
 
-    > **Note:** After typing the word click in empty area to insert the word.
+    >**Note:** After typing the word click in empty area to insert the word.
 
-7. With the **Clean Missing Data** module still selected, in the pane on the right, set the following configuration settings:
+1. With the **Clean Missing Data** module still selected, in the pane on the right, set the following configuration settings:
     - **Minimum missing value ratio**: 0.0
     - **Maximum missing value ratio**: 1.0
     - **Cleaning mode**: Remove entire row
 
-    >**Tip :**
-    >If you view the statistics for the **bore**, **stroke**, and **horsepower** columns, you'll see a number of missing values. These columns have fewer missing values than **normalized-losses**, so they might still be useful in predicting **price** once you exclude the rows where the values are missing from training.
+    >**Tip**: If you view the statistics for the **bore**, **stroke**, and **horsepower** columns, you'll see a number of missing values. These columns have fewer missing values than **normalized-losses**, so they might still be useful in predicting **price** once you exclude the rows where the values are missing from training.
 
-8. In the **Asset library**, search for a **Normalize Data** module and place it on the canvas, below the **Clean Missing Data** module. Then connect the left-most output from the **Clean Missing Data** module to the input of the **Normalize Data** module.
+1. In the **Asset library**, search for a **Normalize Data** module and place it on the canvas, below the **Clean Missing Data** module. Then connect the left-most output from the **Clean Missing Data** module to the input of the **Normalize Data** module.
 
-9. Double click on the **Normalize Data** module to view its parameters pane. You will need to specify the transformation method and the columns to be transformed. Set the transformation method to **MinMax**. Apply a rule by selecting **Edit column** to include the following **Column names** and then click on **Save**.
+1. Double click on the **Normalize Data** module to view its parameters pane. You will need to specify the transformation method and the columns to be transformed. Set the transformation method to **MinMax**. Apply a rule by selecting **Edit column** to include the following **Column names** and then click on **Save**.
     - **symboling**
     - **wheel-base**
     - **length**
@@ -188,8 +210,7 @@ Follow the remaining steps, use the image for reference as you add and configure
 
     ![Screenshot showing how all numeric columns other than price are selected.](media/normalize-rules-2a.png)
 
-    >**Tip :**
-    >If you compare the values in the **stroke**, **peak-rpm**, and **city-mpg** columns, they are all measured in different scales, and it is possible that the larger values for **peak-rpm** might bias the training algorithm and create an over-dependency on this column compared to columns with lower values, such as **stroke**. Typically, data scientists mitigate this possible bias by *normalizing* the numeric columns so they're on the similar scales.
+    >**Tip**: If you compare the values in the **stroke**, **peak-rpm**, and **city-mpg** columns, they are all measured in different scales, and it is possible that the larger values for **peak-rpm** might bias the training algorithm and create an over-dependency on this column compared to columns with lower values, such as **stroke**. Typically, data scientists mitigate this possible bias by *normalizing* the numeric columns so they're on the similar scales.
 
 ### Task 6: Run the pipeline
 
@@ -205,13 +226,13 @@ To apply your data transformations, you must run the pipeline.
 
     ![Screenshot of designer asset library with the completed job and job details button below.](media/completed-job-2c.png)
 
-    Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**. 
+    >**Note**: Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**. 
 
 1. When the run has completed, click on **Job detail**. A new tab will open, and you will see the components that have completed with check marks like this:
 
     ![Screenshot of dataset with modules in completed job state.](media/normalize-complete-2a.png)
 
-The dataset is now prepared for model training. Close the Job detail tab to return to the pipeline.
+    >**Note**: The dataset is now prepared for model training. Close the Job detail tab to return to the pipeline.
 
 ### Task 7: Create training pipeline
 
@@ -221,8 +242,7 @@ After you've used data transformations to prepare the data, you can use it to tr
 
 1. In the **Asset library** pane on the left, search for and place a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
 
-    >**Tip**
-    > Use the search bar to quickly locate modules. 
+    >**Tip**: Use the search bar to quickly locate modules. 
 
 1. Double click on the **Split Data** module, and configure its settings as follows:
     * **Splitting mode**: Split Rows
@@ -237,14 +257,13 @@ After you've used data transformations to prepare the data, you can use it to tr
 
       ![Picture1](media/ai900lab2aimg1.png)
 
-    The **price** label model will predict a numeric value, so we need to train the model using a *regression* algorithm.
+    >**Note**: The **price** label model will predict a numeric value, so we need to train the model using a *regression* algorithm.
 
 1. In the **Asset library**, search for and place a **Linear Regression** module to the canvas, to the left of the **Split Data** module and above the **Train Model** module. Then connect its output to the **Untrained model** (left) input of the **Train Model** module.
 
-    > **Note :**
-    > There are multiple algorithms you can use to train a regression model. For help choosing one, take a look at the [Machine Learning Algorithm Cheat Sheet for Azure Machine Learning designer](https://aka.ms/mlcheatsheet?azure-portal=true).
+    > **Note**: There are multiple algorithms you can use to train a regression model. For help choosing one, take a look at the [Machine Learning Algorithm Cheat Sheet for Azure Machine Learning designer](https://aka.ms/mlcheatsheet?azure-portal=true).
 
-    To test the trained model, we need to use it to *score* the validation dataset we held back when we split the original data - in other words, predict labels for the features in the validation dataset.
+    >**Note**: To test the trained model, we need to use it to *score* the validation dataset we held back when we split the original data - in other words, predict labels for the features in the validation dataset.
  
 1. In the **Asset library**, search for and place a **Score Model** module to the canvas, below the **Train Model** module. Then connect the output of the **Train Model** module to the **Trained model** (left) input of the **Score Model** module; and drag the **Results dataset2** (right) output of the **Split Data** module to the **Dataset** (right) input of the **Score Model** module.
 
@@ -266,7 +285,7 @@ Now you're ready to run the training pipeline and train the model.
 
 1. Close the **Score Model result visualization** tab.
 
-The model is predicting values for the **price** label, but how reliable are its predictions? To assess that, you need to evaluate the model.
+   >**Note**: The model is predicting values for the **price** label, but how reliable are its predictions? To assess that, you need to evaluate the model.
 
 ### Task 9: Evaluate model
 
@@ -298,9 +317,10 @@ One way to evaluate a regression model is to compare the predicted labels to the
     - **Coefficient of Determination (R<sup>2</sup>)**
     
      >**Note:** If you can't see all regression performance metrics it is because screen is 100% zoom in if have to zoom out the screen until you see all regression performance metrics .
+     
 1. Close the *Evaluation_results* pane.
 
-When you've identified a model with evaluation metrics that meet your needs, you can prepare to use that model with new data.
+   >**Note**: When you've identified a model with evaluation metrics that meet your needs, you can prepare to use that model with new data.
 
 ### Task 10: Create and run an inference pipeline
 
@@ -314,15 +334,15 @@ When you've identified a model with evaluation metrics that meet your needs, you
 
 1. In the **Create inference pipeline** drop-down list, click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Auto Price Training-real time inference** will be opened.
 
-    *If the pipeline doesn't include **Web Service Input** and **Web Service Output** modules, go back to the **Designer** page and then reopen the **Auto Price Training-real time inference** pipeline.*
+    >**Note**: If the pipeline doesn't include **Web Service Input** and **Web Service Output** modules, go back to the **Designer** page and then reopen the **Auto Price Training-real time inference** pipeline.
 
 1. Rename the new pipeline to **Predict Auto Price**, and then review the new pipeline. It contains a web service input for new data to be submitted, and a web service output to return results. Some of the transformations and training steps are a part of this pipeline. The trained model will be used to score the new data.
 
-    You're going to make the following changes to the inference pipeline in the next steps #5-9:
+    - You're going to make the following changes to the inference pipeline in the next steps #5-9:
 
-    ![Screenshot of an inference pipeline with changes indicated.](media/inference-changes-2a.png)
+      ![Screenshot of an inference pipeline with changes indicated.](media/inference-changes-2a.png)
 
-   Use the image for reference as you modify the pipeline in the next steps.
+      >**Note**: Use the image for reference as you modify the pipeline in the next steps.
 
 1. The inference pipeline assumes that new data will match the schema of the original training data, so the **Automobile price data (Raw)** dataset from the training pipeline is included. However, this input data includes the **price** label that the model predicts, which is unintuitive to include in new car data for which a price prediction hasn't yet been made. Delete this module and replace it with an **Enter Data Manually** module from the **Data Input and Output** section, containing the following CSV data, which includes feature values without labels for three cars (copy and paste the entire block of text):
 
@@ -333,7 +353,7 @@ When you've identified a model with evaluation metrics that meet your needs, you
     1,NaN,alfa-romero,gas,std,two,hatchback,rwd,front,94.5,171.2,65.5,52.4,2823,ohcv,six,152,mpfi,2.68,3.47,9,154,5000,19,26
     ```
 
-   > **Note**: Make sure you copy all the data of the CSV data.
+    > **Note**: Make sure you copy all the data of the CSV data.
 
 1. Connect the new **Enter Data Manually** module to the same **dataset** input of the **Select Columns in Dataset** module as the **Web Service Input**.
 
@@ -368,24 +388,21 @@ When you've identified a model with evaluation metrics that meet your needs, you
 
 1. Close the visualization tab.
 
-Your inference pipeline predicts prices for cars based on their features. Now you're ready to publish the pipeline so that client applications can use it.
-> **Note**: The realtime endpoint may be in unhealthy state, wait for another 30 minutes for the endpoint state to change the deployment state to **Healthy**, or else perform the steps from Task.
+1. Your inference pipeline predicts prices for cars based on their features. Now you're ready to publish the pipeline so that client applications can use it.
+   
+   > **Note**: The realtime endpoint may be in unhealthy state, wait for another 30 minutes for the endpoint state to change the deployment state to **Healthy**, or else perform the steps from Task.
 
-
-  **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-
-   > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
-
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Hit the Validate button for the corresponding task.
+   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 11: Deploy model
 
 After you've created and tested an inference pipeline for real-time inferencing, you can publish it as a service for client applications to use.
 
-> **Note**
-> In this exercise, you'll deploy the web service to an Azure Container Instance (ACI). This type of compute is created dynamically and is useful for development and testing. For production, you should create an *inference cluster*, which provides an Azure Kubernetes Service (AKS) cluster that provides better scalability and security.
+> **Note**: In this exercise, you'll deploy the web service to an Azure Container Instance (ACI). This type of compute is created dynamically and is useful for development and testing. For production, you should create an *inference cluster*, which provides an Azure Kubernetes Service (AKS) cluster that provides better scalability and security.
 
 ### Task 12: Deploy a service
 
@@ -459,13 +476,26 @@ After you've created and tested an inference pipeline for real-time inferencing,
 
     ![Picture1](media/ai900lab2aimg4.png)
 
-Let's review what you have done. You cleaned and transformed a dataset of automobile data, then used the car *features* to train a model. The model predicts the price of an automobile, which is the *label*.
+   >**Note**: Let's review what you have done. You cleaned and transformed a dataset of automobile data, then used the car *features* to train a model. The model predicts the price of an automobile, which is the *label*.
 
-You also tested a service that is ready to be connected to a client application using the credentials in the **Consume** tab. We will end the lab here. You are welcome to continue to experiment with the service you just deployed.
+   >**Note**: You also tested a service that is ready to be connected to a client application using the credentials in the **Consume** tab. We will end the lab here. You are welcome to continue to experiment with the service you just deployed.
 
- **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Hit the Validate button for the corresponding task.
+   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at [labs-support@spektrasystems.com](labs-support@spektrasystems.com).We are available 24/7 to help you out.
+### Review
+In this lab, you have completed:
+- Create an Azure Machine Learning workspace
+- Create compute and pipeline in Designer 
+- Add and explore a dataset and data transformations
+- Run the pipeline
+- Create and run training pipeline
+- Evaluate model
+- Create and run an inference pipeline
+- Deploy model and service
+- Test the service
+
+## You have successfully completed this lab.
