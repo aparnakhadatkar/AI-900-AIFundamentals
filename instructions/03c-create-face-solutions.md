@@ -12,7 +12,7 @@ In this lab, you will perform:
 - Create a Face API resource and a Azure Storage Account.
 - Configure and run a client application.
 
-## Estimated timing: 10 minutes
+## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 ![](media/Module3c.png)
