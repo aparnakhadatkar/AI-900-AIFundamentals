@@ -6,9 +6,7 @@ The specific cognitive service you will explore in this exercise is **Anomaly De
 
 To test the capabilities of the Anomaly Detection service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or phone apps.
 
-> **Note :**
-> The goal of this exercise is to get a general sense of how cognitive services are provisioned and used. Anomaly Detector is used as an example, but you are not expected to gain a comprehensive knowledge of anomaly detection in this exercise!
-
+> **Note**: The goal of this exercise is to get a general sense of how cognitive services are provisioned and used. Anomaly Detector is used as an example, but you are not expected to gain a comprehensive knowledge of anomaly detection in this exercise!
 
 ## Lab overview
 
@@ -18,9 +16,7 @@ In this lab, you will learn how cognitive services are provisioned and used.
   
 In this lab, you will complete the following tasks:
 
-+ Task 1: Create an Anomaly Detector resource
-+ Task 2: Run Cloud Shell
-+ Task 3: Configure and run a client application
+Exercise 1: Create an Anomaly Detector resource
 
 ## Estimated timing: 10 minutes
 
@@ -174,8 +170,6 @@ This simple app shows only some of the capabilities of the Anomaly Detector serv
 ### Review
 In this lab, you have completed:
 
-- Create an Anomaly Detector resource
-- Run Cloud Shell
-- Configure and run a client application
+- Exercise 1: Create an Anomaly Detector resource
  
 ## You have successfully completed this lab.
