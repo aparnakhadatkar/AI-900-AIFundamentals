@@ -8,7 +8,22 @@ In this lab, you will:
 - Create a Face API resource and a Azure Storage Account.
 - Configure and run a client application.
 
-## Task 1 : Create a *Face API* resource
+### Lab overview
+
+In this lab, you will test the capabilities of the Face service, we'll use a simple command-line application that runs in the Cloud Shell.
+
+## Objectives
+  
+In this lab, you will perform:
+- Create a Face API resource and a Azure Storage Account.
+- Configure and run a client application.
+
+## Estimated timing: 10 minutes
+
+## Architecture Diagram
+![](media/Module3c.png)
+ 
+### Task 1 : Create a *Face API* resource
 
 You can use the Face service by creating a **Face** resource. (Face API is no longer available in Cognitive Services)
 
@@ -29,11 +44,9 @@ If you haven't already done so, create a **Face API** resource in your Azure sub
 
 1. View the **Keys and Endpoint** page for your Face resource. click on Show keys, you will need the endpoint and keys to connect from client applications.
 
-      >**Note :** 
-      > Copy and save the **KEY 1** and **Enpoint** value to NotePad for future reference to connect from client applications. 
+      >**Note**: Copy and save the **KEY 1** and **Enpoint** value to NotePad for future reference to connect from client applications. 
 
-
-## Task 2: Run Cloud Shell
+### Task 2: Run Cloud Shell
 
 To test the capabilities of the Face service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
 
@@ -55,7 +68,7 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 
     ![Wait for PowerShell to start.](media/create-face-solutions/ai900_03c-4.png)
 
-## Task 3: Configure and run a client application
+### Task 3: Configure and run a client application
 
 Now that you have a custom model, you can run a simple client application that uses the Face service.
 
@@ -110,8 +123,8 @@ Now that you have a custom model, you can run a simple client application that u
     
     ![An image of a person with their face outlined](media/create-face-solutions/ai900_03c-8.jpg)
     ![An image of a person with their face outlined](media/resultai-9003c.png)
-    >**Note :**
-    >Face service capabilities that return personally identifiable features are restricted. See https://azure.microsoft.com/blog/responsible-ai-investments-and-safeguards-for-facial-recognition/ for details.
+
+    >**Note**: Face service capabilities that return personally identifiable features are restricted. See https://azure.microsoft.com/blog/responsible-ai-investments-and-safeguards-for-facial-recognition/ for details.
 
 1. Now let's try another image:
 
@@ -137,13 +150,19 @@ Now that you have a custom model, you can run a simple client application that u
 
 1. Review the results of the face analysis for the third image.
 
-**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-   - Click on the **Lab Validation tab** located at the upper right corner of the lab guide section and navigate to the **Lab Validation** Page.
-   - Hit the **Validate** button for the corresponding task.
-   - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at [labs-support@spektrasystems.com](labs-support@spektrasystems.com).We are available 24/7 to help you out.
-
-## Learn more
+### Learn more
 
 This simple app shows only some of the capabilities of the Face service. To learn more about what you can do with this service, see the [Face API page](https://azure.microsoft.com/services/cognitive-services/face/).
+
+### Review
+In this lab, you have completed:
+- Create a Face API resource and a Azure Storage Account.
+- Configure and run a client application.
+
+## You have successfully completed this lab.
