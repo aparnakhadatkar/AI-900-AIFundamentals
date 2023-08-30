@@ -14,7 +14,7 @@ To test the capabilities of the Anomaly Detection service, we'll use a simple co
   
 In this lab, you will perform:
 
-+ Exercise 1: Create an Anomaly Detector resource
++ Create an Anomaly Detector resource
 
 ## Estimated timing: 10 minutes
 
