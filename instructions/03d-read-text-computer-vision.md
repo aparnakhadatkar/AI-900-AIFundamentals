@@ -11,7 +11,7 @@ In this lab, you will perform:
 - Create an Azure Cognitive Service and Azure Storage Account
 - Configure and run a client application
 
-## Estimated timing: 10 minutes
+## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 
