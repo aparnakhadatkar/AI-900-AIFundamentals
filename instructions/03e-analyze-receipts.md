@@ -1,5 +1,6 @@
-
 # Module 03e: Explore form recognition
+
+## Lab overview
 
 In the artificial intelligence (AI) field of computer vision, optical character recognition (OCR) is commonly used to read printed or handwritten documents. Often, the text is simply extracted from the documents into a format that can be used for further processing or analysis.
 
@@ -9,8 +10,18 @@ Form Recognizer uses machine learning models trained to extract text from images
 
 To test the capabilities of the Form Recognizer service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
+## Lab objective
+In this lab, you will perform:
++ Exercise 1: Create a *Cognitive Services* resource
+
+## Estimated timing: 10 minutes
+
+## Architecture Diagram
+![](media/Module3e.png)
 
 ## Exercise 1: Create a *Cognitive Services* resource
+
+### Task 1: Create a Cognitive Services resource
 
 You can use the Form Recognizer service by creating either a **Form Recognizer** resource or a **Cognitive Services** resource.
 
@@ -108,13 +119,17 @@ Now that you have a custom model, you can run a simple client application that u
 1. Review the returned results. See that Form Recognizer is able to interpret the data in the form, correctly identifying the merchant address and phone number, and the transaction date and time, as well as the line items, subtotal, tax, and total amounts.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-   > - Hit the Validate button for the corresponding task.  
-   > - If you receive a success message, you can proceed to the next task.If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Hit the Validate button for the corresponding task.
+   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### You have successfully completed this lab.
-
-## Learn more
+### Learn more
 
 This simple app shows only some of the Form Recognizer capabilities of the Computer Vision service. To learn more about what you can do with this service, see the [Form Recognizer page](https://docs.microsoft.com/azure/applied-ai-services/form-recognizer/overview).
+
+### Review
+In this lab, you have completed:
+- Create a *Cognitive Services* resource
+  
+### You have successfully completed this lab.
