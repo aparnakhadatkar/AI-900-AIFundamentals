@@ -1,6 +1,6 @@
 # Module 02b: Explore classification with Azure Machine Learning Designer
 
-### Lab overview
+## Lab overview
 
 In this lab, you will train a regression model that predicts the price of an automobile based on its characteristics.
 
