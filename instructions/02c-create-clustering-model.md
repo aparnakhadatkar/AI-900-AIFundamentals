@@ -4,7 +4,7 @@
 
 In this lab, you will train a regression model that predicts the price of an automobile based on its characteristics.
 
-## Objective
+## Lab objective
 
 In this lab, you will perform:
 
