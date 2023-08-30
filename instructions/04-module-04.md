@@ -1,5 +1,7 @@
 # Module 04: Explore text analytics
 
+## Lab overview
+
 Natural Language Processing (NLP) is a branch of artificial intelligence (AI) that deals with written and spoken language. You can use NLP to build solutions that extract semantic meaning from text or speech, or that formulate meaningful responses in natural language.
 
 Microsoft Azure *Cognitive Services* includes the text analytics capabilities in the *Language* service, which provides some out-of-the-box NLP capabilities, including the identification of key phrases in text, and the classification of text based on sentiment.
@@ -8,6 +10,14 @@ For example, suppose the fictional *Margie's Travel* organization encourages cus
 
 To test the capabilities of the Language service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or phone apps.
 
+## Lab objectives
++ Exercise 1: Create a Cognitive Services resource
+  
+## Estimated timing: 10 minutes
+
+## Architecture Diagram
+![](media/Module4.png)
+ 
 ## Exercise 1: Create a *Cognitive Services* resource
 
 ### Task 1: Create a *Cognitive Services* resource
@@ -49,8 +59,7 @@ If you haven't already done so, create a **Cognitive Services** resource in your
 
       ![](media/cogendpoint.png)
 
-   >**Note :** 
-   > Copy and save the **KEY 1** and **Endpoint** values to NotePad for future reference to connect from client applications.
+   >**Note**: Copy and save the **KEY 1** and **Endpoint** values to NotePad for future reference to connect from client applications.
 
 ### Task 2: Run Cloud Shell
 
@@ -196,15 +205,18 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The code editor.](media/review4.png)
     
-   **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-   > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
-
-### You have successfully completed this lab.
-
-## Learn more
+### Learn more
 
 This simple app shows only some of the capabilities of the Language service. To learn more about what you can do with this service, see the [Language service page](https://azure.microsoft.com/services/cognitive-services/language-service/).
+
+### Review
+In this lab, you have completed:
+-  Create a Cognitive Services resource
+- 
+## You have successfully completed this lab.
