@@ -8,13 +8,7 @@ In this lab, you will use a dataset of historical bicycle rental details to trai
 
 In this lab, you will complete the following tasks:
 
-+ Task 1: Create an Azure Machine Learning workspace
-+ Task 2: Create compute
-+ Task 3: Create a dataset
-+ Task 4: Run an automated machine learning job
-+ Task 5: Review the best model
-+ Task 6: Deploy a predictive service
-+ Task 7: Test the deployed service
++ Exercise 1: Create an Azure Machine Learning workspace
 
 ## Estimated timing: 10 minutes
 
@@ -300,11 +294,5 @@ Now you can test your deployed service.
 In this lab, you have completed:
 
 - Create an Azure Machine Learning workspace
-- Create compute
-- Create a dataset
-- Run an automated machine learning job
-- Review the best model
-- Deploy a predictive service
-- Test the deployed service
 
 ### You have successfully completed this lab.
