@@ -16,7 +16,11 @@ In this lab, you will learn how cognitive services are provisioned and used.
 
 ## Lab objectives
   
-After completing this lab, you will be able to create an Anomaly Detector resource
+In this lab, you will complete the following tasks:
+
++ Task 1: Create an Anomaly Detector resource
++ Task 2: Run Cloud Shell
++ Task 3: Configure and run a client application
 
 ## Estimated timing: 10 minutes
 
@@ -169,6 +173,9 @@ This simple app shows only some of the capabilities of the Anomaly Detector serv
 
 ### Review
 In this lab, you have completed:
+
 - Create an Anomaly Detector resource
-  
+- Run Cloud Shell
+- Configure and run a client application
+ 
 ## You have successfully completed this lab.
