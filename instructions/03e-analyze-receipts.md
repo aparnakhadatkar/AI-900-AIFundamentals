@@ -12,7 +12,7 @@ To test the capabilities of the Form Recognizer service, we'll use a simple comm
 
 ## Lab objective
 In this lab, you will perform:
-+ Exercise 1: Create a *Cognitive Services* resource
++ Create a *Cognitive Services* resource
 
 ## Estimated timing: 10 minutes
 
