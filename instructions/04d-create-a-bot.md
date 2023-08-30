@@ -8,7 +8,7 @@ For customer support scenarios, it's common to create a bot that can interpret a
 In this lab, you will perform:
 - Create a custom question-answering knowledge base
 
-## Estimated timing: 10 minutes
+## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 ![](media/Module4d.png)
