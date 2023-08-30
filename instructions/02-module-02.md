@@ -1,6 +1,26 @@
 # Module 2: Explore Automated Machine Learning in Azure ML
 
-In this exercise, you will use a dataset of historical bicycle rental details to train a model that predicts the number of bicycle rentals that should be expected on a given day, based on seasonal and meteorological features.
+## Lab overview
+
+In this lab, you will use a dataset of historical bicycle rental details to train a model that predicts the number of bicycle rentals that should be expected on a given day, based on seasonal and meteorological features. 
+
+## Lab objective
+
+In this lab, you will complete the following tasks:
+
++ Task 1: Create an Azure Machine Learning workspace
++ Task 2: Create compute
++ Task 3: Create a dataset
++ Task 4: Run an automated machine learning job
++ Task 5: Review the best model
++ Task 6: Deploy a predictive service
++ Task 7: Test the deployed service
+
+## Estimated timing: 10 minutes
+
+## Architecture Diagram
+
+  ![](media/Module2.png)
 
 ## Exercise 1: Create an Azure Machine Learning workspace  
 
@@ -67,7 +87,7 @@ In this exercise, you will use a dataset of historical bicycle rental details to
 
        ![Picture1](media/ai900mod2cimg7.png)
        
-   > **Note**:The compute cluster will take some time to be created. You can move onto the next step while you wait.
+       > **Note**:The compute cluster will take some time to be created. You can move onto the next step while you wait.
 
 ### Task 3: Create a dataset
 
@@ -109,7 +129,7 @@ In this exercise, you will use a dataset of historical bicycle rental details to
 
 1. After the dataset has been created, open it and view the **Explore** page to see a sample of the data. This data contains historical features and labels for bike rentals.
 
-> **Citation**: *This data is derived from [Capital Bikeshare](https://www.capitalbikeshare.com/system-data) and is used in accordance with the published data [license agreement](https://www.capitalbikeshare.com/data-license-agreement)*.
+   > **Citation**: *This data is derived from [Capital Bikeshare](https://www.capitalbikeshare.com/system-data) and is used in accordance with the published data [license agreement](https://www.capitalbikeshare.com/data-license-agreement)*.
 
 ### Task 4: Run an automated machine learning job
 
@@ -186,7 +206,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 
     ![Screenshot of the metrics tab with the residuals and predicted_true charts selected.](media/use-automated-machine-learning/ai-900-matrix1.png)
 
-    Scroll down and review the charts which show the performance of the model. The first chart shows the *residuals*, the differences between predicted and actual values, as a histogram, the second chart compares the predicted values against the true values.
+    >**Note**: Scroll down and review the charts which show the performance of the model. The first chart shows the *residuals*, the differences between predicted and actual values, as a histogram, the second chart compares the predicted values against the true values.
 
 1. Select the **Explanations(preview)** tab. Select an Explanation ID and then select **Aggregate feature importance** tab. This chart shows how much each feature in the dataset influences the label prediction, like this:
 
@@ -226,11 +246,11 @@ Now you can test your deployed service.
 
     ![Screenshot of location of Endpoints on the left hand menu.](media/use-automated-machine-learning/endpoints-2.png)
 
-> **Note**: The realtime endpoint may be in unhealthy state, wait for another 30 minutes for the endpoint state to change the deployment state to **Healthy**, or else perform the steps from Task 5.
+    > **Note**: The realtime endpoint may be in unhealthy state, wait for another 30 minutes for the endpoint state to change the deployment state to **Healthy**, or else perform the steps from Task 5.
 
-### Learn more
+   ### Learn more
 
-**Azure Machine Learning Endpoints** provide an improved, simpler deployment experience. To learn more about what you can do with this service, see the [Understanding_Service_State](https://learn.microsoft.com/en-us/azure/machine-learning/v1/how-to-deploy-and-where?tabs=azcli&view=azureml-api-1#understanding-service-state).
+   **Azure Machine Learning Endpoints** provide an improved, simpler deployment experience. To learn more about what you can do with this service, see the [Understanding_Service_State](https://learn.microsoft.com/en-us/azure/machine-learning/v1/how-to-deploy-and-where?tabs=azcli&view=azureml-api-1#understanding-service-state).
 
 1. When the **predict-rentals** endpoint opens, view the **Test** tab.
 
@@ -266,14 +286,25 @@ Now you can test your deployed service.
 
     ![Screenshot of an example of testing the model with sample data in the test tab.](media/use-automated-machine-learning/workaround-test1.png)
 
-Let's review what you have done. You used a dataset of historical bicycle rental data to train a model. The model predicts the number of bicycle rentals expected on a given day, based on seasonal and meteorological *features*. In this case, the *labels* are number of bicycle rentals.
+    >**Note**: Let's review what you have done. You used a dataset of historical bicycle rental data to train a model. The model predicts the number of bicycle rentals expected on a given day, based on seasonal and meteorological *features*. In this case, the *labels* are number of bicycle rentals.
 
-You have just tested a service that is ready to be connected to a client application using the credentials in the **Consume** tab. We will end the lab here. You are welcome to continue to experiment with the service you just deployed.
+    >**Note**: You have just tested a service that is ready to be connected to a client application using the credentials in the **Consume** tab. We will end the lab here. You are welcome to continue to experiment with the service you just deployed.
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-   > - Hit the Validate button for the corresponding task.  
-   > - If you receive a success message, you can proceed to the next task.If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+### Review
+In this lab, you have completed:
+
+- Create an Azure Machine Learning workspace
+- Create compute
+- Create a dataset
+- Run an automated machine learning job
+- Review the best model
+- Deploy a predictive service
+- Test the deployed service
 
 ### You have successfully completed this lab.
