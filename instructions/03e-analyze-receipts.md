@@ -9,6 +9,7 @@ Form Recognizer uses machine learning models trained to extract text from images
 
 To test the capabilities of the Form Recognizer service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
+## Estimated timing: 60 minutes
 
 ## Exercise 1: Create a *Cognitive Services* resource
 
