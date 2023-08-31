@@ -8,6 +8,8 @@ The **Custom Vision** cognitive service in Microsoft Azure provides a cloud-base
 
 To test the capabilities of the Custom Vision service to detect objects in images, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or mobile apps.
 
+## Estimated timing: 60 minutes
+
 ## Exercise 1: Create a *Cognitive Services* resource
 
 ### Task 1: Create a *Cognitive Services* resource
