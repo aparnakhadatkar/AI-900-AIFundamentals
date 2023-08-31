@@ -1,5 +1,7 @@
 # Module 02b: Explore classification with Azure Machine Learning Designer
 
+## Estimated timing: 60 minutes
+
 ## Exercise 1: Create an Azure Machine Learning workspace in the Azure portal
 
 ### Task 1: Create an Azure Machine Learning workspace  
