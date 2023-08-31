@@ -8,6 +8,8 @@ In this lab, you will:
 - Create a Face API resource and a Azure Storage Account.
 - Configure and run a client application.
 
+## Estimated timing: 60 minutes
+
 ## Task 1 : Create a *Face API* resource
 
 You can use the Face service by creating a **Face** resource. (Face API is no longer available in Cognitive Services)
