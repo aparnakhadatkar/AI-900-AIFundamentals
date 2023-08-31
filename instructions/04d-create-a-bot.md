@@ -1,6 +1,8 @@
 # Module 04d: Explore question answering 
 For customer support scenarios, it's common to create a bot that can interpret and answer frequently asked questions through a website chat window, email, or voice interface. Underlying the bot interface is a knowledge base of questions and appropriate answers that the bot can search for suitable responses.
 
+## Estimated timing: 60 minutes
+
 ## Exercise 1: Create a custom question-answering knowledge base
 
 ### Task 1: Create a custom question-answering knowledge base
