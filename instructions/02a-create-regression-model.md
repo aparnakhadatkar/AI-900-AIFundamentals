@@ -5,6 +5,8 @@ In this lab, you will train a regression model that predicts the price of an aut
 - Creating a compute and running pipelines by adding data.
 - Deploying and evaluating a model.
 
+## Estimated timing: 60 minutes
+
 ## Exercise 1: Create an Azure Machine Learning workspace  
 
 ### Task 1: Create an Azure Machine Learning workspace  
