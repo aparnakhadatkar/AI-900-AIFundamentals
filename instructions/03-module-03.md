@@ -8,6 +8,8 @@ In this lab, you'll use a simple command-line application to see the Computer Vi
 - Creating Azure Cognitive Services and Azure Storage Account.
 - Configuring and running a client application.
 
+## Estimated timing: 60 minutes
+
 ## Task 1: Create a *Cognitive Services* resource
 
 You can use the Computer Vision service by creating either a **Computer Vision** resource or a **Cognitive Services** resource.
