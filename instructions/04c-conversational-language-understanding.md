@@ -8,6 +8,8 @@ In this lab, you will:
 - Create and use a Language Service resource.
 - Configure and run a client application.
 
+## Estimated timing: 60 minutes
+
 ## Exercise 1: Create a *Language service* resource
 
 You can use the Conversational Language Understanding service by creating a **Language service** resource.
