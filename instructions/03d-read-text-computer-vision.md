@@ -8,6 +8,8 @@ In this lab, you will:
 - Create an Azure Cognitive Service and Azure Storage Account.
 - Configure and run a client application.
 
+## Estimated timing: 60 minutes
+
 ## Exercise 01: Use the Computer Vision Service to Read Text in an Image
 
 The **Computer Vision** cognitive service provides support for OCR tasks, including:
