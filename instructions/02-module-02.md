@@ -2,6 +2,8 @@
 
 In this exercise, you will use a dataset of historical bicycle rental details to train a model that predicts the number of bicycle rentals that should be expected on a given day, based on seasonal and meteorological features.
 
+## Estimated timing: 60 minutes
+
 ## Exercise 1: Create an Azure Machine Learning workspace  
 
 ### Task 1: Create an Azure Machine Learning workspace
