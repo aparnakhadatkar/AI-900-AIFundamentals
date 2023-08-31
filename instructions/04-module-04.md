@@ -8,6 +8,8 @@ For example, suppose the fictional *Margie's Travel* organization encourages cus
 
 To test the capabilities of the Language service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or phone apps.
 
+## Estimated timing: 60 minutes
+
 ## Exercise 1: Create a *Cognitive Services* resource
 
 ### Task 1: Create a *Cognitive Services* resource
