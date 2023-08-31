@@ -1,4 +1,3 @@
-
 # Module 04b: Explore translation
 
 One of the driving forces that has enabled human civilization to develop is the ability to communicate with one another. In most human endeavors, communication is key.
@@ -6,6 +5,8 @@ One of the driving forces that has enabled human civilization to develop is the 
 Artificial Intelligence (AI) can help simplify communication by translating text or speech between languages, helping to remove barriers to communication across countries and cultures.
 
 To test the capabilities of the Translator service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or phone apps.
+
+## Estimated timing: 60 minutes
 
 ## Exercise 1:Create a *Cognitive Services* resource
 
