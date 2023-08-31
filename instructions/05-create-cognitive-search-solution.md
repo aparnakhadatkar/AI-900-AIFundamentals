@@ -22,6 +22,8 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
 - A **Storage account** with blob containers, which will store raw documents and other collections of tables, objects, or files.
   
+## Estimated timing: 60 minutes
+
 ### Task 1: Create an Azure Cognitive Search resource
    
 1. Click the **+ Create a resource** button, search for **Azure Cognitive Search**, and create a **Azure Cognitive Search** resource with the following settings:
