@@ -17,6 +17,8 @@ To test the capabilities of the Anomaly Detection service, we'll use a simple co
 > **Note**
 > The goal of this exercise is to get a general sense of how cognitive services are provisioned and used. Anomaly Detector is used as an example, but you are not expected to gain a comprehensive knowledge of anomaly detection in this exercise!
 
+## Estimated timing: 60 minutes
+
 ## Create an *Anomaly Detector* resource
 
 Let's start by creating an **Anomaly Detector** resource in your Azure subscription:
