@@ -17,7 +17,9 @@ In this lab, you will perform:
 ## Architecture Diagram
 ![](media/Module3c.png)
  
-### Task 1 : Create a *Face API* resource
+### Exercise 1 : Create a *Face API* resource
+
+## Task 1 : Create a *Face API* resource
 
 You can use the Face service by creating a **Face** resource. (Face API is no longer available in Cognitive Services)
 

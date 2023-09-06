@@ -8,12 +8,13 @@ For example, suppose you want to create a smart device that can respond verbally
 
 To test the capabilities of the Speech service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
+
 ## Lab objectives
 In this lab, you will perform:
 - Create a Cognitive Services resource
 - Configure and run a client application.
 
-## Estimated timing: 120 minutes
+## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 ![](media/Module4a.png)

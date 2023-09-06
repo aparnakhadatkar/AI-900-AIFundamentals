@@ -17,6 +17,8 @@ In this lab, you will perform:
 ## Architecture Diagram
 ![](media/Module4c.1.png)
 
+## Estimated timing: 60 minutes
+
 ## Exercise 1: Create a *Language service* resource
 
 You can use the Conversational Language Understanding service by creating a **Language service** resource.

@@ -16,6 +16,8 @@ In this lab, you will perform:
 
   ![](media/Module2.png)
 
+## Estimated timing: 60 minutes
+
 ## Exercise 1: Create an Azure Machine Learning workspace  
 
 ### Task 1: Create an Azure Machine Learning workspace

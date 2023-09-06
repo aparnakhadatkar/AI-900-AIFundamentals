@@ -22,7 +22,9 @@ In this lab, you will perform:
 
 ![](media/Module3.png)
  
-### Task 1: Create a *Cognitive Services* resource
+### Exercise 1: Create a *Cognitive Services* resource
+
+## Task 1: Create a *Cognitive Services* resource
 
 You can use the Computer Vision service by creating either a **Computer Vision** resource or a **Cognitive Services** resource.
 

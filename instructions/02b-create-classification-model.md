@@ -9,7 +9,7 @@ In this lab, you will perform:
 
 + Create an Azure Machine Learning workspace in the Azure portal
 
-## Estimated timing: 150 minutes
+## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 

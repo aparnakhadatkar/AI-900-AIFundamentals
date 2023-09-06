@@ -22,6 +22,8 @@ In this lab, you will perform:
 
   ![](media/Module1.1.png)
 
+## Estimated timing: 60 minutes
+
 ## Exercise 1: Create an Anomaly Detector resource
 
 ### Task 1: Create an Anomaly Detector resource
