@@ -123,7 +123,7 @@ Now that you have a custom model, you can run a simple client application that u
 
     The sample client application will analyze the following image:
 
-    ![An image of an advertisement for Northwind Traders grocery store.](media/read-text-computer-vision/advert.jpg)
+   ![An image of an advertisement for Northwind Traders grocery store.](media/read-text-computer-vision/advert.jpg)
 
 1. In the PowerShell pane, enter the following commands to run the code to read the text:
 
