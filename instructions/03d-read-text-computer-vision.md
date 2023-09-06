@@ -17,9 +17,7 @@ In this lab, you will perform:
 
 ![](media/Module3d.png)
 
-## Estimated timing: 60 minutes
-
-## Exercise 01: Use the Computer Vision Service to Read Text in an Image
+## Exercise 1: Use the Computer Vision Service to Read Text in an Image
 
 The **Computer Vision** cognitive service provides support for OCR tasks, including:
 
@@ -61,7 +59,7 @@ You can use the Computer Vision service by creating either a **Computer Vision**
 
     ![Find the key and endpoint tab in your Cognitive Services resource's left hand pane.](media/read-text-computer-vision/ai900_mod03d_t3_s4.png)
 
-### Task-2: Run Cloud Shell
+### Task 2: Run Cloud Shell
 
 To test the capabilities of the Custom Vision service, we'll use a simple command-line application that runs in the Cloud Shell on Azure.
 
@@ -125,7 +123,7 @@ Now that you have a custom model, you can run a simple client application that u
 
     The sample client application will analyze the following image:
 
-    ![An image of an advertisement for Northwind Traders grocery store.](media/read-text-computer-vision/advert.jpg)
+   ![An image of an advertisement for Northwind Traders grocery store.](media/read-text-computer-vision/advert.jpg)
 
 1. In the PowerShell pane, enter the following commands to run the code to read the text:
 
