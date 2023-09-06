@@ -17,7 +17,7 @@ In this lab, you will perform:
 ## Architecture Diagram
 ![](media/Module4b.png)
 
-## Exercise 1:Create a *Cognitive Services* resource
+## Exercise 1: Create a *Cognitive Services* resource
 
 ### Task 1: Create a *Cognitive Services* resource
 
