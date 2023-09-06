@@ -59,7 +59,7 @@ You can use the Computer Vision service by creating either a **Computer Vision**
 
     ![Find the key and endpoint tab in your Cognitive Services resource's left hand pane.](media/read-text-computer-vision/ai900_mod03d_t3_s4.png)
 
-### Task-2: Run Cloud Shell
+### Task 2: Run Cloud Shell
 
 To test the capabilities of the Custom Vision service, we'll use a simple command-line application that runs in the Cloud Shell on Azure.
 
