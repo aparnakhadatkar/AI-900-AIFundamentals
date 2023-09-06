@@ -10,13 +10,11 @@ In this lab, you will perform:
 
 + Create an Azure Machine Learning workspace
 
-## Estimated timing: 150 minutes
+## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 
   ![](media/Module2.png)
-
-## Estimated timing: 60 minutes
 
 ## Exercise 1: Create an Azure Machine Learning workspace  
 
