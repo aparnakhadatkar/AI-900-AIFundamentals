@@ -19,6 +19,8 @@ In this lab, you will perform:
 ## Architecture Diagram
 ![](media/Module4a.png)
 
+## Exercise 1: Create a Cognitive Services resource
+
 ## Task 1: Create a Cognitive Services resource
 
 1. Click the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
