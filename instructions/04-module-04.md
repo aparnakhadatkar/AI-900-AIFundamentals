@@ -116,10 +116,10 @@ Now that you have a custom model, you can run a simple client application that u
 
 1. Don't worry too much about the details of the code. In the Azure portal, navigate to your Cognitive Services resource. Then select the **Keys and Endpoints** page on the left-hand pane. Copy the key and endpoint from the page and paste them into the code editor, replacing the **YOUR_KEY** and **YOUR_ENDPOINT** placeholder values respectively.
 
-    > **Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
-    > **Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
+   > **Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
+   > **Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
 
-    After pasting the key and endpoint values, the first two lines of code should look similar to this:
+   After pasting the key and endpoint values, the first two lines of code should look similar to this:
 
     > $key="1a2b3c4d5e6f7g8h9i0j...."    
     > $endpoint="https..."
