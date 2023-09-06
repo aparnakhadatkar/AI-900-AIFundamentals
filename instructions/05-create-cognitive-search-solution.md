@@ -9,7 +9,7 @@ In this lab, you will perform:
 - Create Azure resources
 - Extract data from a data source
 
-## Estimated timing: 120 minutes
+## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 ![](media/Module5.png)
