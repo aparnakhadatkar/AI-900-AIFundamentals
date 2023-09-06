@@ -1,12 +1,21 @@
 # Module 04c: Explore language understanding
 
+## Lab overview
+
 Increasingly, we expect computers to be able to use AI to understand spoken or typed commands in natural language. For example, you might want to implement a home automation system that enables you to control devices in your home by using voice commands such as "switch on the light" or "put the fan on", and have an AI-powered device understand the command and take appropriate action.
 
 To test the capabilities of the Conversational Language Understanding service, we'll use a command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or phone apps.
 
-In this lab, you will: 
-- Create and use a Language Service resource.
-- Configure and run a client application.
+## Lab objectives
+
+In this lab, you will perform:
+- Create and use a Language Service resource
+- Configure and run a client application
+
+## Estimated timing: 60 minutes
+
+## Architecture Diagram
+![](media/Module4c.1.png)
 
 ## Estimated timing: 60 minutes
 
@@ -29,7 +38,6 @@ You can use the Conversational Language Understanding service by creating a **La
    
 1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Cognitive Service.
 
-
 ### Task 1: Create a Conversational Language Understanding App
 
 To implement natural language understanding with Conversational Language Understanding, you create an app; and then add entities, intents, and utterances to define the commands you want the app to execute.
@@ -42,8 +50,7 @@ To implement natural language understanding with Conversational Language Underst
     - **Resource type**: Language.
     - **Resource name**: **learnlanguage-<inject key="DeploymentID" enableCopy="false"/>**
     
-    >**Tip :**
-    >If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
+    >**Tip :** If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
     >1. On the bar at the top of the page, click the **Settings (&#9881;)** button.
     >1. On the **Settings** page, view the **Resources** tab.
     >1. Select your language resource, and click **Switch resource**.
@@ -164,11 +171,11 @@ To use your trained model in a client application, you must deploy it as an endp
 
 1. Enter the following text, and then select **Run the test**:
 
-    *switch the light on*
+    - *switch the light on*
 
     ![Test your model by selecting your deployed model, then entering text and selecting Run the test.](media/ai900_mod04c_t4_s4.png) 
 
-    Review the result that is returned, noting that it includes the predicted intent (which should be **switch_on**) and the predicted entity (**device**) with confidence scores that indicates the probability the model calculated for the predicted intent and entity. The JSON tab shows the comparative confidence for each potential intent (the one with the highest confidence score is the predicted intent)
+    >**Note**: Review the result that is returned, noting that it includes the predicted intent (which should be **switch_on**) and the predicted entity (**device**) with confidence scores that indicates the probability the model calculated for the predicted intent and entity. The JSON tab shows the comparative confidence for each potential intent (the one with the highest confidence score is the predicted intent)
 
 1. Clear the text box and test the model with the following utterances under *Enter your own text, or upload a text document*:
     - *turn off the fan*
@@ -258,18 +265,21 @@ Now let's open and edit a pre-written script, which will run the client applicat
 
 1. Experiment with a few more commands; including commands that the model was not trained to support, such as "Hello" or "switch on the oven". The app should generally understand commands for which its language model is defined, and fail gracefully for other input.
 
->**Note :**
-> Each time you will need to start with **./understand.ps1** followed by the phrase. Include quotation marks around your phrase.
+   >**Note**Each time you will need to start with **./understand.ps1** followed by the phrase. Include quotation marks around your phrase.
 
-**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Hit the Validate button for the corresponding task.
+   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at [labs-support@spektrasystems.com](labs-support@spektrasystems.com).We are available 24/7 to help you out.
-
-### You have successfully completed this lab.
-
-## Learn more
+### Learn more
 
 This app shows only some of the capabilities of the Conversational Language Understanding feature of the Language service. To learn more about what you can do with this service, see the [Conversational Language Understanding page](https://docs.microsoft.com/azure/cognitive-services/language-service/conversational-language-understanding/overview). 
+
+### Review
+In this lab, you have completed:
+- Create and use a Language Service resource
+- Configure and run a client application
+
+## You have successfully completed this lab.

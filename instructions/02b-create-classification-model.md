@@ -1,6 +1,19 @@
 # Module 02b: Explore classification with Azure Machine Learning Designer
 
+## Lab overview
+
+In this lab, you will train a regression model that predicts the price of an automobile based on its characteristics.
+
+## Lab objective
+In this lab, you will perform:
+
++ Create an Azure Machine Learning workspace in the Azure portal
+
 ## Estimated timing: 60 minutes
+
+## Architecture Diagram
+
+![](media/Module2b.png)
 
 ## Exercise 1: Create an Azure Machine Learning workspace in the Azure portal
 
@@ -43,9 +56,7 @@
 
    ![Picture1](media/ai900mod2cimg4.png)
 
-
-> **Note :**
-> This module is one of many that make use of an Azure Machine Learning workspace, including the other modules in the [Microsoft Azure AI Fundamentals: Explore visual tools for machine learning](https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/) learning path. If you are using your own Azure subscription, you may consider creating the workspace once and reusing it in other modules. Your Azure subscription will be charged a small amount for data storage as long as the Azure Machine Learning workspace exists in your subscription, so we recommend you delete the Azure Machine Learning workspace when it is no longer required.
+   > **Note**: This module is one of many that make use of an Azure Machine Learning workspace, including the other modules in the [Microsoft Azure AI Fundamentals: Explore visual tools for machine learning](https://docs.microsoft.com/learn/paths/create-no-code-predictive-models-azure-machine-learning/) learning path. If you are using your own Azure subscription, you may consider creating the workspace once and reusing it in other modules. Your Azure subscription will be charged a small amount for data storage as long as the Azure Machine Learning workspace exists in your subscription, so we recommend you delete the Azure Machine Learning workspace when it is no longer required.
 
 ### Task 2: Create compute
 
@@ -74,8 +85,7 @@
 
        ![Picture1](media/ai900mod2cimg7.png)
       
-     > **Note:**
-    > Compute instances and clusters are based on standard Azure virtual machine images. For this module, the *Standard_DS11_v2* image is recommended to achieve the optimal balance of cost and performance. If your subscription has a quota that does not include this image, choose an alternative image; but bear in mind that a larger image may incur higher cost and a smaller image may not be sufficient to complete the tasks. Alternatively, ask your Azure administrator to extend your quota.
+     > **Note**: Compute instances and clusters are based on standard Azure virtual machine images. For this module, the *Standard_DS11_v2* image is recommended to achieve the optimal balance of cost and performance. If your subscription has a quota that does not include this image, choose an alternative image; but bear in mind that a larger image may incur higher cost and a smaller image may not be sufficient to complete the tasks. Alternatively, ask your Azure administrator to extend your quota.
 
 The compute cluster will take some time to be created. You can move onto the next step while you wait.
 
@@ -137,7 +147,7 @@ To get started with Azure Machine Learning Designer, first you must create a pip
 
 ### Task 5: Load data to a canvas
 
-1. Return to your pipeline by selecting **Designer** on the left-hand menu. On the **Designer** page, select the **Diabetes Training** pipeline (Under **pipline Drafts**).
+1. Return to your pipeline by selecting **Designer** on the left-hand menu. On the **Designer** page, select the **Diabetes Training** pipeline (Under **pipeline Drafts**).
 
 1. Then in the project, next to the pipeline name on the left, select the arrows icon to expand the panel if it is not already expanded. The panel should open by default to the **Asset library** pane, indicated by the books icon at the top of the panel. Note that there is a search bar to locate assets. Notice two buttons, **Data** and **Component**.
 
@@ -186,7 +196,7 @@ Before you can train a model, you typically need to apply some pre-processing tr
 
 1. Click **Save**, then again Click on **Save** icon and close the selection box. 
 
-The data transformation is normalizing the numeric columns to put them on the same scale, which should help prevent columns with large values from dominating model training. You'd usually apply a whole bunch of pre-processing transformations like this to prepare your data for training, but we'll keep things simple in this exercise.
+   >**Note**: The data transformation is normalizing the numeric columns to put them on the same scale, which should help prevent columns with large values from dominating model training. You'd usually apply a whole bunch of pre-processing transformations like this to prepare your data for training, but we'll keep things simple in this exercise.
 
 ### Task 7: Run the pipeline
 
@@ -198,10 +208,9 @@ To apply your data transformations, you need to run the pipeline as an experimen
 
     ![Screenshot of designer asset library with the completed job and job details button below.](media/create-classification-model/completed-job1.png)
 
-    Notice that theleft-handd panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**.
+    >**Note**: Notice that the left-handd panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**.
 
->**Note :**
-> If the error occurs and states that the data type is already in the collection, submit the pipeline again and re-run it.
+    >**Note**: If the error occurs and states that the data type is already in the collection, submit the pipeline again and re-run it.
 
 ### Task 8: View the transformed data
 
@@ -370,12 +379,11 @@ The performance of this model isn't all that great, partly because we performed 
 
 1. When the pipeline has completed, select **Job detail**. In the new tab, right click the **Execute Python Script** module. Select the **Preview data** and select **Result dataset** to see the predicted labels and probabilities for the three patient observations in the input data.
 
-Your inference pipeline predicts whether or not patients are at risk for diabetes based on their features. Now you're ready to publish the pipeline so that client applications can use it.
+>**Note**: Your inference pipeline predicts whether or not patients are at risk for diabetes based on their features. Now you're ready to publish the pipeline so that client applications can use it.
 
-After you've created and tested an inference pipeline for real-time inferencing, you can publish it as a service for client applications to use.
+>**Note**: After you've created and tested an inference pipeline for real-time inferencing, you can publish it as a service for client applications to use.
 
-> **Note :**
-> In this exercise, you'll deploy the web service to an Azure Container Instance (ACI). This type of compute is created dynamically and is useful for development and testing. For production, you should create an *inference cluster*, which provides an Azure Kubernetes Service (AKS) cluster that provides better scalability and security.
+> **Note**: In this exercise, you'll deploy the web service to an Azure Container Instance (ACI). This type of compute is created dynamically and is useful for development and testing. For production, you should create an *inference cluster*, which provides an Azure Kubernetes Service (AKS) cluster that provides better scalability and security.
 
 ### Task 13: Deploy a service
 
@@ -426,18 +434,22 @@ After you've created and tested an inference pipeline for real-time inferencing,
     }
     ```
 
-    > **Note :**
-    > The JSON above defines features for a patient, and uses the **predict-diabetes** service you created to predict a diabetes diagnosis.
+    > **Note**: The JSON above defines features for a patient, and uses the **predict-diabetes** service you created to predict a diabetes diagnosis.
 
 1. Select **Test**. On the right hand of the screen, you should see the output **'DiabetesPrediction'**. The output is 1 if the patient is predicted to have diabetes, and 0 if the patient is predicted not to have diabetes.  
 
     ![Screenshot of the Test pane.](media/create-classification-model/test-interface1.png)
 
-    You have just tested a service that is ready to be connected to a client application using the credentials in the **Consume** tab. We will end the lab here. You are welcome to continue to experiment with the service you just deployed.
+    >**Note**: You have just tested a service that is ready to be connected to a client application using the credentials in the **Consume** tab. We will end the lab here. You are welcome to continue to experiment with the service you just deployed.
 
-**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-   - Click on the **Lab Validation tab** located at the upper right corner of the lab guide section and navigate to the **Lab Validation** Page.
-   - Hit the **Validate** button for the corresponding task.
-   - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at [labs-support@spektrasystems.com](labs-support@spektrasystems.com).We are available 24/7 to help you out.
+### Review
+In this lab, you have completed:
+- Create an Azure Machine Learning workspace in the Azure portal
+
+## You have successfully completed this lab.

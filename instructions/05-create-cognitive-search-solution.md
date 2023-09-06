@@ -1,16 +1,19 @@
 # Module 05: Explore Knowledge Mining
 
+## Lab overview
+
 Let's imagine you work for Fourth Coffee, a national coffee chain. You're asked to help build a knowledge mining solution that makes it easy to search for insights about customer experiences. You decide to build an Azure Cognitive Search index using data extracted from customer reviews.  
 
-In this lab you'll:
-
+## Lab objectives
+In this lab, you will perform:
 - Create Azure resources
 - Extract data from a data source
-- Enrich data with AI skills
-- Use Azure's indexer in the Azure portal
-- Query your search index
-- Review results saved to a Knowledge Store
 
+## Estimated timing: 120 minutes
+
+## Architecture Diagram
+![](media/Module5.png)
+ 
 ## Pre-requisites Required
 
 The solution you'll create for Fourth Coffee requires the following resources in your Azure subscription:
@@ -244,15 +247,18 @@ Let's see the power of the knowledge store in action. When you ran the *Import d
     Look at the key phrases the knowledge store was able to capture from the content in the reviews. Many of the fields are keys, so you can link the tables like a relational database. The last field shows the key phrases that were extracted by the skillset.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-   > - Hit the Validate button for the corresponding task.  
-   > - If you receive a success message, you can proceed to the next task.If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Hit the Validate button for the corresponding task.
+   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-
-### You have successfully completed this lab.
-
+   
 ## Learn more
 
 This simple search index only some of the capabilities of the Azure Cognitive Search service. To learn more about what you can do with this service, see the [Azure Cognitive Search service page](/azure/search/search-what-is-azure-search).
 
+### Review
+In this lab, you have completed:
+- Create Azure resources
+- Extract data from a data source
+
+## You have successfully completed this lab.

@@ -1,12 +1,21 @@
 # Module 03d: Explore optical character recognition
 
+## Lab overview
+
 A common computer vision challenge is to detect and interpret text in an image. This kind of processing is often referred to as *optical character recognition* (OCR). Microsoft's Read API provides access to OCR capabilities. 
 
-To test the capabilities of the Read API, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
+In this lab, you will test the capabilities of the Read API, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
-In this lab, you will:
-- Create an Azure Cognitive Service and Azure Storage Account.
-- Configure and run a client application.
+## Lab objectives
+In this lab, you will perform:
+- Create an Azure Cognitive Service and Azure Storage Account
+- Configure and run a client application
+
+## Estimated timing: 60 minutes
+
+## Architecture Diagram
+
+![](media/Module3d.png)
 
 ## Estimated timing: 60 minutes
 
@@ -16,7 +25,7 @@ The **Computer Vision** cognitive service provides support for OCR tasks, includ
 
 - A **Read** API that is optimized for larger documents. This API is used asynchronously, and can be used for both printed and handwritten text.
 
-## Task-1: Create a *Cognitive Services* resource
+### Task 1: Create a *Cognitive Services* resource
 
 You can use the Computer Vision service by creating either a **Computer Vision** resource or a **Cognitive Services** resource.
 
@@ -24,7 +33,7 @@ You can use the Computer Vision service by creating either a **Computer Vision**
 
    ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img1.png)
    
-1. In the Marketplace page search for **Cognitave Services** and Select **Cognitive Services**.
+1. In the Marketplace page search for **Cognitive Services** and Select **Cognitive Services**.
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod3bimg1.png)
      
@@ -39,22 +48,20 @@ You can use the Computer Vision service by creating either a **Computer Vision**
     - **Name**: Enter **ai900cognitive-<inject key="DeploymentID" enableCopy="false"/>**
     - **Pricing tier**: Standard S0
     - **By checking this box I acknowledge that I have read and understood all the terms below**: Select the checkbox.
-    
-    
+        
 1. Click on **Review + Create**.
 
       ![](media/read-text-computer-vision/lab3d-3.png)
    
-
 1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
 
 1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Cognitive Service.
 
-1. View the **Keys and Endpoint** page for your Cognitive Services resource. Copy and save the **KEY 1** and **Enpoint** value to NotePad for future reference to connect from client applications. 
+1. View the **Keys and Endpoint** page for your Cognitive Services resource. Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications. 
 
     ![Find the key and endpoint tab in your Cognitive Services resource's left hand pane.](media/read-text-computer-vision/ai900_mod03d_t3_s4.png)
 
-## Task-2: Run Cloud Shell
+### Task-2: Run Cloud Shell
 
 To test the capabilities of the Custom Vision service, we'll use a simple command-line application that runs in the Cloud Shell on Azure.
 
@@ -68,7 +75,7 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
     ![Create storage by clicking confirm.](media/read-text-computer-vision/create-a-storage.png)
 
-1. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
+1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
 
     ![How to find the left hand drop down menu to switch to PowerShell](media/analyze-images-computer-vision-service/powershell-portal-guide-3(1).png)
 
@@ -76,7 +83,7 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
     ![Wait for PowerShell to start.](media/analyze-images-computer-vision-service/powershell-prompt(1).png)
 
-## Task-3: Configure and run a client application
+### Task 3: Configure and run a client application
 
 Now that you have a custom model, you can run a simple client application that uses the OCR service.
 
@@ -100,7 +107,7 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The editor containing code to analyze text in images.](media/read-text-computer-vision/ai900_mod03d_t3_s3.png)
 
-1. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource (Task 1, Step 8) and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Enpoint* placeholder values, respectively.
+1. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource (Task 1, Step 8) and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Endpoint* placeholder values, respectively.
 
   
     > **Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
@@ -148,15 +155,19 @@ Now that you have a custom model, you can run a simple client application that u
 
 1. Review the results of the analysis for the second image. It should also return the text and bounding boxes of the text.
 
-**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Hit the Validate button for the corresponding task.
+   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at [labs-support@spektrasystems.com](labs-support@spektrasystems.com).We are available 24/7 to help you out.
-
-### You have successfully completed this lab.
-
-## Learn more
+### Learn more
 
 This simple app shows only some of the OCR capabilities of the Computer Vision service. To learn more about what you can do with this service, see the [OCR page](https://docs.microsoft.com/azure/cognitive-services/computer-vision/overview-ocr).
+
+### Review
+In this lab, you have completed:
+- Create an Azure Cognitive Service and Azure Storage Account.
+- Configure and run a client application.
+
+### You have successfully completed this lab.

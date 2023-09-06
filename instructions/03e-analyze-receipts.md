@@ -1,5 +1,6 @@
-
 # Module 03e: Explore form recognition
+
+## Lab overview
 
 In the artificial intelligence (AI) field of computer vision, optical character recognition (OCR) is commonly used to read printed or handwritten documents. Often, the text is simply extracted from the documents into a format that can be used for further processing or analysis.
 
@@ -9,9 +10,18 @@ Form Recognizer uses machine learning models trained to extract text from images
 
 To test the capabilities of the Form Recognizer service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
+## Lab objective
+In this lab, you will perform:
++ Create a *Cognitive Services* resource
+
 ## Estimated timing: 60 minutes
 
+## Architecture Diagram
+![](media/Module3e.png)
+
 ## Exercise 1: Create a *Cognitive Services* resource
+
+### Task 1: Create a Cognitive Services resource
 
 You can use the Form Recognizer service by creating either a **Form Recognizer** resource or a **Cognitive Services** resource.
 
@@ -31,7 +41,7 @@ If you haven't already done so, create a **Cognitive Services** resource in your
    
 1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Cognitive Service.
 
-1. View the **Keys and Endpoint** page for your Cognitive Services resource. Copy and save the **KEY 1** and **Enpoint** value to NotePad for future reference to connect from client applications. 
+1. View the **Keys and Endpoint** page for your Cognitive Services resource. Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications. 
 
 ### Task 2: Run Cloud Shell
 
@@ -47,7 +57,7 @@ To test the capabilities of the Form Recognizer service, we'll use a simple comm
     
     ![Screenshot of the cloud shell in the Azure portal.](media/stoarge-up.png)
 
-1. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
+1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
 
     ![How to find the left hand drop down menu to switch to PowerShell](media/analyze-receipts/powershell-portal-guide-03.png) 
 
@@ -79,7 +89,7 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The editor containing code to analyze fields in a receipt.](media/analyze-receipts/recognize-receipt-code06.png)
 
-1. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource.  Copy these from the **Keys and Endpoints** page for your resource (Task 1, Step 5) and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Enpoint* placeholder values, respectively.
+1. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource.  Copy these from the **Keys and Endpoints** page for your resource (Task 1, Step 5) and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Endpoint* placeholder values, respectively.
 
     > **Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
 
@@ -109,13 +119,17 @@ Now that you have a custom model, you can run a simple client application that u
 1. Review the returned results. See that Form Recognizer is able to interpret the data in the form, correctly identifying the merchant address and phone number, and the transaction date and time, as well as the line items, subtotal, tax, and total amounts.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-   > - Hit the Validate button for the corresponding task.  
-   > - If you receive a success message, you can proceed to the next task.If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Hit the Validate button for the corresponding task.
+   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### You have successfully completed this lab.
-
-## Learn more
+### Learn more
 
 This simple app shows only some of the Form Recognizer capabilities of the Computer Vision service. To learn more about what you can do with this service, see the [Form Recognizer page](https://docs.microsoft.com/azure/applied-ai-services/form-recognizer/overview).
+
+### Review
+In this lab, you have completed:
+- Create a *Cognitive Services* resource
+  
+### You have successfully completed this lab.

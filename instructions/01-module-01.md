@@ -1,13 +1,26 @@
 # Module 01: Explore Cognitive Services
 
+## Lab overview
+
 Azure Cognitive Services encapsulate common AI functionality that can be categorized into four main pillars: vision, speech, language, and decision services. In this exercise, you will take a look at one of the decision services to get a general sense of how to provision and use a cognitive services resource in a software application.
 
 The specific cognitive service you will explore in this exercise is **Anomaly Detector**. Anomaly Detector is used to analyze data values over time and to detect any unusual values that might indicate a problem or an issue for further investigation. For example, a sensor in a temperature-controlled storage facility might monitor the temperature every minute and log the measured values. You can use the Anomaly Detector service to analyze the logged temperature values and flag any that fall significantly outside of the normal range of expected temperatures.
 
 To test the capabilities of the Anomaly Detection service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or phone apps.
 
-> **Note :**
-> The goal of this exercise is to get a general sense of how cognitive services are provisioned and used. Anomaly Detector is used as an example, but you are not expected to gain a comprehensive knowledge of anomaly detection in this exercise!
+> **Note**: The goal of this exercise is to get a general sense of how cognitive services are provisioned and used. Anomaly Detector is used as an example, but you are not expected to gain a comprehensive knowledge of anomaly detection in this exercise!
+
+## Lab objective
+  
+In this lab, you will perform:
+
++ Create an Anomaly Detector resource
+
+## Estimated timing: 120 minutes
+
+## Architecture Diagram
+
+  ![](media/Module1.1.png)
 
 ## Estimated timing: 60 minutes
 
@@ -48,8 +61,7 @@ Let us start by creating an **Anomaly Detector** resource in your Azure subscrip
    
      ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img5.png)
    
-      >**Note :** 
-      > Copy and save the **KEY 1** and **Enpoint** value to NotePad for future reference to connect from client applications. 
+      >**Note**: Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications. 
 
 ### Task 2: Run Cloud Shell
 
@@ -89,8 +101,7 @@ Now that you have a Cloud Shell environment, you can run a simple application th
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
     
-    >**Note :** 
-    >To Paste the Code right click inside the cloud Shell and then Click on Paste.
+    >**Note**: To Paste the Code right click inside the cloud Shell and then Click on Paste.
 
 1. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
 
@@ -106,10 +117,9 @@ Now that you have a Cloud Shell environment, you can run a simple application th
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img11.png)
 
-1. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Anomaly Detector resource. Copy these from the **Keys and Endpoints** page for your resource (Exercise 1, Task 1, Step 7) and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Enpoint* placeholder values, respectively.
+1. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Anomaly Detector resource. Copy these from the **Keys and Endpoints** page for your resource (Exercise 1, Task 1, Step 7) and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Endpoint* placeholder values, respectively.
 
-    > **Tip :**
-    > You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
+    > **Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
     
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img5.png)
   
@@ -129,7 +139,7 @@ Now that you have a Cloud Shell environment, you can run a simple application th
       
       >**Note**: If you will be not able to find this option, you can use also Shortcut Keys **Ctrl + S** to save and **Ctrl + Q** to close the editor.
       
-    Remember, anomaly detection is an artificial intelligence technique used to determine whether values in a series are within expected parameters. The sample client application will use your Anomaly Detector service to analyze a file containing a series of date/times and numeric values. The application should return results indicating at each time point, whether the numeric value is within expected parameters.
+      >**Note**: Remember, anomaly detection is an artificial intelligence technique used to determine whether values in a series are within expected parameters. The sample client application will use your Anomaly Detector service to analyze a file containing a series of date/times and numeric values. The application should return results indicating at each time point, whether the numeric value is within expected parameters.
 
 1. In the PowerShell pane, enter the following commands to run the code:
 
@@ -144,14 +154,19 @@ Now that you have a Cloud Shell environment, you can run a simple application th
      
       ![Picture1](media/Ai900-mod1-img9.png)
       
-  **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
-
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Hit the Validate button for the corresponding task.
+   > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Learn more
 
 This simple app shows only some of the capabilities of the Anomaly Detector service. To learn more about what you can do with this service, see the [Anomaly Detector page](https://learn.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/overview).
+
+### Review
+In this lab, you have completed:
+
+- Create an Anomaly Detector resource
+ 
+## You have successfully completed this lab.
