@@ -12,7 +12,7 @@ In this lab, you will perform:
 ## Estimated timing: 60 minutes
 
 ## Architecture Diagram
-![](media/Module05.png)
+![](media/Module0005.png)
  
 ## Pre-requisites Required
 
