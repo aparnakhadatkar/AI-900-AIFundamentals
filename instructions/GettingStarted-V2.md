@@ -12,6 +12,7 @@
 
    ![Create storage by clicking confirm.](media/GettingStarted/splitw.png)
 
+1. To hide the lab guide, click on **>** symbol and to expose the lab guide, click on **<** symbol.   
 
 1. Also, you can start, stop, and restart virtual machines from the **Resources** tab.
 
