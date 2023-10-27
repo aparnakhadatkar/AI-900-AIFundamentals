@@ -4,7 +4,7 @@
 
    ![Create storage by clicking confirm.](media/GettingStarted/start2.png)   
           
-1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your email address provided during registration.
+1. To get the lab environment details, you can select the **Environment** tab. Additionally, the credentials will also be emailed to your email address provided during registration.
    
    ![Create storage by clicking confirm.](media/GettingStarted/env.png)
 
