@@ -1,288 +1,154 @@
-# Module 2: Explore Automated Machine Learning in Azure ML
+# Module 02: Explore Computer Vision
 
 ## Lab overview
 
-In this lab, you will use a dataset of historical bicycle rental details to train a model that predicts the number of bicycle rentals that should be expected on a given day, based on seasonal and meteorological features. 
+The ***Computer Vision*** cognitive service uses pre-trained machine learning models to analyze images and extract information about them.
 
-## Lab objective
+For example, suppose the fictitious retailer *Northwind Traders* has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. By using the Computer Vision service, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
 
+In this lab, you'll use a simple command-line application to see the Computer Vision service in action. The same principles and functionality apply in real-world solutions, such as web sites or phone apps. This includes:
+- Creating Azure Cognitive Services and Azure Storage Account.
+- Configuring and running a client application.
+
+## Lab objectives
 In this lab, you will perform:
-
-+ Create an Azure Machine Learning workspace
-
++ Create a Cognitive Services resource
++ Run Cloud Shell
++ Configure and run a client application
+  
 ## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 
-  ![](media/Module2.png)
-
-## Exercise 1: Create an Azure Machine Learning workspace  
-
-### Task 1: Create an Azure Machine Learning workspace
-
-1. Select **+ Create a resource**, search for Machine Learning.
-
-    ![Picture1](media/ai900mod1img1.png)
-
-1. In the Marketplace page search for **Azure Machine Learning** and Select **Azure Machine Learning**.
+![](media/Module3.png)
  
-    ![Picture1](media/ai900mod2cimg1.png)
+### Exercise 1: Create a *Cognitive Services* resource
 
-1. On **Azure Machine Learning** Page Click on **Create**.
+## Task 1: Create a *Cognitive Services* resource
 
-   ![Picture1](media/ai900mod2cimg2.png)
+You can use the Computer Vision service by creating either a **Computer Vision** resource or a **Cognitive Services** resource.
+
+1. In the Azure Portal, select the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
+    - **Subscription**: *Your Azure subscription*
+    - **Resource group**: Select **AI-900-Module-03-<inject key="DeploymentID" enableCopy="false"/>**
+    - **Region**:  **<inject key="location" enableCopy="false"/>**
+    - **Name**: *Enter **ai900cognitive-<inject key="DeploymentID" enableCopy="false"/>***
+    - **Pricing tier**: Standard S0
+    - **By checking this box I acknowledge that I have read and understood all the terms below**: Selected
+
+1. Click **Review + create** 
    
-1. create a new **Azure Machine Learning** resource with an *Azure Machine Learning* plan. Use the following settings:
-
-    - **Subscription**: *Use the existing Azure subscription*
-    - **Resource group**: Select **AI-900-Module-02-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Workspace name**: Enter **ai900workspace-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Region**: Select **<inject key="location" enableCopy="false"/>**
-    - **Storage account**: *Note the default new storage account that will be created for your workspace*
-    - **Key vault**: *Note the default new key vault that will be created for your workspace*
-    - **Application insights**: *Note the default new application insights resource that will be created for your workspace*
-    - **Container registry**: None (*one will be created automatically the first time you deploy a model to a container*)
-
-1. Select **Review + create**.
 1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
    
-1. Wait for deployment to complete, and then click on the **Go to resource** button, this will take you to your workspace resource.
+1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Cognitive Services.
 
-1. Select **Launch studio** (or open a new browser tab and navigate to [https://ml.azure.com](https://ml.azure.com?azure-portal=true), and sign into Azure Machine Learning studio using your Microsoft account).
+1. View the **Keys and Endpoint** page from the left pane under Resource Management for your Cognitive Services resource. You will need the endpoint and keys to connect from client applications.
 
-1. Close any messages that are displayed.
+   >**Note**: Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications. 
 
-1. In Azure Machine Learning studio, you should see your newly created workspace. If that is not the case, select your Azure directory in the left-hand menu. Then from the new left-hand menu select **Workspaces**, where all the workspaces associated to your directory are listed, and **select the one you created for this exercise**.
+### Task 2: Run Cloud Shell
 
-### Task 2: Create compute
+To test the capabilities of the Computer Vision service, we'll use a simple command-line application that runs in the Cloud Shell on Azure.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), select the **&#8801;** icon (a menu icon that looks like a stack of three lines) at the top left to view the various pages in the interface (you may need to maximize the size of your screen). You can use these pages in the left hand pane to manage the resources in your workspace. Select **Compute**(under **Manage**).
+1. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
 
-1. On the **Compute** page, select the **Compute clusters** tab and to add a new compute cluster, click on **+ New** with the following settings. You'll use this to train a machine learning model:
+    ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/analyze-images-computer-vision-service/powershell-portal-guide-1(1).png)
 
-      ![Picture1](media/ai900mod2cimg5.png)
-      
-    - **Location**: Select <inject key="location" enableCopy="false" />
-    - **Virtual machine tier**: Dedicated
-    - **Virtual machine type**: CPU
-    - **Virtual machine size**:
-        - Choose **Select from all options**
-        - Search for and select **Standard_DS11_v2**
-    - Select **Next**
-    
-      ![Picture1](media/ai900mod2cimg6.png)
-      
-    - **Compute name**: Enter **ai900compute-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Minimum number of nodes**: 0
-    - **Maximum number of nodes**: 2
-    - **Idle seconds before scale down**: 120
-    - **Enable SSH access**: keep it as default
-    - Select **Create**
+1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
 
-       ![Picture1](media/ai900mod2cimg7.png)
-       
-       > **Note**:The compute cluster will take some time to be created. You can move onto the next step while you wait.
+1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AI-900-Module-03-<inject key="DeploymentID" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
 
-### Task 3: Create a dataset
+    ![Create storage by clicking confirm.](media/analyze-images-computer-vision-service/create-a-storage.png)
 
-1. View the comma-separated data at [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true) in your web browser.
+1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the menu icon at the top left of the screen. View the **Data** page (under **Assets**). The Data page contains specific data files or tables that you plan to work with in Azure ML. You can create datasets from this page as well.
+    ![How to find the left hand drop down menu to switch to PowerShell](media/analyze-images-computer-vision-service/powershell-portal-guide-3(1).png)
 
-1. On the **Data** page, under the **Data assets** tab, select **+ Create**. Then configure a data asset with the following settings:
-    * **Data type**:
-        * **Name**: bike-rentals
-        * **Description**: Bicycle rental data
-        * **Type**: Tabular
-    * Click on **Next**.
-    
-    * **Data source**: From Web Files
-    * * Click on **Next**.
-    
-    * **Web URL**:
-        * **Web URL**: [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true)
-        * **Skip data validation**: *do not select*
-    * Click on **Next**.
-     
-    * **Settings**:
-        * **File format**: Delimited
-        * **Delimiter**: Comma
-        * **Encoding**: UTF-8
-        * **Column headers**: Only first file has headers
-        * **Skip rows**: None
-        * **Dataset contains multi-line data**: *do not select*
-    * Click on **Next**.
+1. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
 
-    * **Schema**:
-        * Include all columns other than **Path**
-        * Review the automatically detected types
-    * Click on **Next**.
+    ![Wait for PowerShell to start.](media/analyze-images-computer-vision-service/powershell-prompt(1).png)
 
-    * **Review**
-        * Select **Create**
+### Task 3: Configure and run a client application
 
-1. After the dataset has been created, open it and view the **Explore** page to see a sample of the data. This data contains historical features and labels for bike rentals.
+Now that you have a Cloud Shell environment, you can run a simple application that uses the Computer Vision service to analyze an image.
 
-   > **Citation**: *This data is derived from [Capital Bikeshare](https://www.capitalbikeshare.com/system-data) and is used in accordance with the published data [license agreement](https://www.capitalbikeshare.com/data-license-agreement)*.
+1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
 
-### Task 4: Run an automated machine learning job
-
-Follow the next steps to run a job that uses automated machine learning to train a regression model that predicts bicycle rentals.
-
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the menu icon at the top left of the screen. View the **Automated ML** page (under **Authoring**).
-
-1. Click on **+ New Automated ML job**. Create an Automated ML job with the following settings:
-
-    - **Select data asset**:
-        - **Dataset**: bike-rentals
-    - Click on **Next**
-    
-    - **Configure job**:
-        - **New experiment name**: mslearn-bike-rental
-        - **Target column**: rentals(Integer) (*this is the label that the model is trained to predict)*
-        - **Select compute type**: *Compute cluster*
-        - **Select Azure ML compute cluster**: **ai900compute-<inject key="DeploymentID" enableCopy="false"/>**
-    - Click on **Next**.
-    
-    - **Select task and settings**: 
-        - **Task type**: Regression *(the model predicts a numeric value)* 
-   
-     - Notice under task type there are settings *View additional configuration settings* and *View featurization settings*. Now configure these settings. Click on **View additional configuration settings**.
-
-       ![Screenshot of a selection pane with boxes around the Regression task type and additional configuration settings.](media/use-automated-machine-learning/ai-900-regression.png)
-
-    - **Additional configuration settings:**
-        - **Primary metric**: Select **Normalized root mean squared error**
-        - **Explain best model**: Selected — *this option causes automated machine learning to calculate feature importance for the best model which makes it possible to determine the influence of each feature on the predicted label.*
-        - **Use all supported models**: <u>Un</u>selected. *You'll restrict the job to try only a few specific algorithms.*
-        - **Allowed models**: *Select only **RandomForest** and **LightGBM** — normally you'd want to try as many as possible, but each model added increases the time it takes to run the job.*
-        - **Exit criterion**:
-            - **Training job time (hours)**: 0.5 — *ends the job after a maximum of 30 minutes.*
-            - **Metric score threshold**: 0.085 — *if a model achieves a normalized root mean squared error metric score of 0.085 or less, the job ends.*
-        - **Concurrency**: *do not change*
-    - Click on **Save**.
-  
-      ![Screenshot of additional configurations with a box around the allowed models.](media/use-automated-machine-learning/ai-900-add-cong01.png)
-      
-    - Now click on **View featurization settings:**
-        - **Enable featurization**: Selected — *automatically preprocess the features before training.*
-    - Click on **Save**.
-
-    - Click **Next** to go to the next selection pane.
-
-    - **Select the validation and test type**
-        - **Validation type**: Auto
-        - **Test data asset (preview)**: No test data asset required
-    - Click on **Finish**.
-
-1. When you finish submitting the automated machine learning job details, it starts automatically. Wait for the status to change from *Preparing* to *Running*.
-
-1. When the status changes to *Running*, view the **Models** tab and observe as each possible combination of training algorithm and pre-processing steps is tried and the performance of the resulting model is evaluated. The page automatically refreshes periodically, but you can also select **Refresh**. It might take 10 minutes or so before models start to appear, as the cluster nodes must be initialized before training can begin.
-
-      ![Picture1](media/ai900lab2img3.png)
-
-1. Wait for the job to finish. It might take a while — now might be a good time for a coffee break!
-
-### Task 5: Review the best model
-
-1. On the **Overview** tab of the automated machine learning job, note the best model summary.
-    ![Screenshot of the best model summary of the automated machine learning job with a box around the algorithm name.](media/use-automated-machine-learning/ai-900-overview.png)
-
-    >**NOTE:** You may see a message under the status "Warning: User specified exit score reached...". This is an expected message. Please continue to the next step.  
-
-1. Select the text under **Algorithm name** for the best model to view its details.
-
-1. Next to the *Normalized root mean squared error* value, select **View all other metrics** to see values of other possible evaluation metrics for a regression model.
-
-    ![Screenshot of how to locate view all other metrics on the Model tab.](media/use-automated-machine-learning/ai-900-overview-02.png)
-
-1. Select the **Metrics** tab, use the arrows icon to expand the panel if it is not already expanded and select the **residuals** and **predicted_true** charts if they are not already selected. 
-
-    ![Screenshot of the metrics tab with the residuals and predicted_true charts selected.](media/use-automated-machine-learning/ai-900-matrix1.png)
-
-    >**Note**: Scroll down and review the charts which show the performance of the model. The first chart shows the *residuals*, the differences between predicted and actual values, as a histogram, the second chart compares the predicted values against the true values.
-
-1. Select the **Explanations(preview)** tab. Select an Explanation ID and then select **Aggregate feature importance** tab. This chart shows how much each feature in the dataset influences the label prediction, like this:
-
-    ![Screenshot of the feature importance chart on the Explanations tab.](media/use-automated-machine-learning/feature-importance1.png)
-
-### Task 6: Deploy a predictive service
-
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), on the **Automated ML** page, select your automated machine learning job.
-
-1. On the **Overview** tab, select the algorithm name for the best model.
-
-    ![Screenshot of the best model summary with a box around the algorithm name on the details tab.](media/use-automated-machine-learning/ai-900-algorithm.png)
-
-1. On the **Model** tab, select the **Deploy** button and use the **web service** option.
-
-      ![Picture1](media/ai900lab2img2.png)
-      
-3. To deploy the model with the following settings and then click on **Deploy**.
-    - **Name**: predict-rentals
-    - **Description**: Predict cycle rentals
-    - **Compute type**: Azure Container Instance
-    - **Enable authentication**: Selected
-
-       ![Picture1](media/ai900lab2img1.png)
-
-1. Wait for the deployment to start - this may take a few seconds. Then, in the **Model summary** section, observe the **Deploy status** for the **predict-rentals** service, which should be **Running**. Wait for this status to change to **Succeeded**, which may take some time. You may need to select **Refresh** periodically.
-
-1. In Azure Machine Learning studio, on the left hand menu, select **Endpoints**.
-
-    ![Screenshot of location of Endpoints on the left hand menu.](media/endpoints1-02.png)
-
-### Task 7: Test the deployed service
-
-Now you can test your deployed service.
-
-1. On the **Endpoints** page, open the **predict-rentals** real-time endpoint.
-
-    ![Screenshot of location of Endpoints on the left hand menu.](media/use-automated-machine-learning/endpoints-2.png)
-
-    > **Note**: The realtime endpoint may be in unhealthy state, wait for another 30 minutes for the endpoint state to change the deployment state to **Healthy**, or else perform the steps from Task 5.
-
-   ### Learn more
-
-   **Azure Machine Learning Endpoints** provide an improved, simpler deployment experience. To learn more about what you can do with this service, see the [Understanding_Service_State](https://learn.microsoft.com/en-us/azure/machine-learning/v1/how-to-deploy-and-where?tabs=azcli&view=azureml-api-1#understanding-service-state).
-
-1. When the **predict-rentals** endpoint opens, view the **Test** tab.
-
-1. In the **Input data to test real-time endpoint** pane, replace the template JSON with the following input data:
-
-    ```JSON
-    {
-      "Inputs": { 
-        "data": [
-          {
-            "day": 1,
-            "mnth": 1,   
-            "year": 2022,
-            "season": 2,
-            "holiday": 0,
-            "weekday": 1,
-            "workingday": 1,
-            "weathersit": 2, 
-            "temp": 0.3, 
-            "atemp": 0.3,
-            "hum": 0.3,
-            "windspeed": 0.3 
-          }
-        ]    
-      },   
-      "GlobalParameters": 1.0
-    }
+    ```PowerShell
+    git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
 
-1. Click on the **Test** button.
+    > **Tip:**
+    > If you already used this command in another lab to clone the *ai-900* repository, you can skip this step.
 
-1. Review the test results, which include a predicted number of rentals based on the input features. The test pane took the input data and used the model you trained to return the predicted number of rentals.
+1. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
 
-    ![Screenshot of an example of testing the model with sample data in the test tab.](media/use-automated-machine-learning/workaround-test1.png)
+    ```PowerShell
+    code .
+    ```
 
-    >**Note**: Let's review what you have done. You used a dataset of historical bicycle rental data to train a model. The model predicts the number of bicycle rentals expected on a given day, based on seasonal and meteorological *features*. In this case, the *labels* are number of bicycle rentals.
+    Notice how this opens up an editor like the one in the image below:
 
-    >**Note**: You have just tested a service that is ready to be connected to a client application using the credentials in the **Consume** tab. We will end the lab here. You are welcome to continue to experiment with the service you just deployed.
+    ![The code editor.](media/analyze-images-computer-vision-service/powershell-portal-guide-4(2).png)
+
+1. In the **Files** pane on the left, expand **ai-900** and select **analyze-image.ps1**. This file contains some code that uses the Computer Vision service to analyze an image, as shown here:
+
+    ![The editor containing code to analyze an image](media/analyze-images-computer-vision-service/analyze-image-code1.png)
+
+1. Don't worry too much about the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Endpoint* placeholder values respectively.
+
+    > **Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
+    
+   After pasting the key and endpoint values, the first two lines of code should look similar to this:
+
+    
+     > $key="1a2b3c4d5e6f7g8h9i0j...."    
+     > $endpoint="https..."
+
+1. After making the changes to the variables in the code, press **CTRL+S** to save the file. Then press **CTRL+Q** to close the code editor.
+
+1. The sample client application will use your Computer Vision service to analyze the following image, taken by a camera in the Northwind Traders store:
+
+    ![An image of a parent using a cellphone camera to take a picture of a child in in a store](media/analyze-images-computer-vision-service/store-camera-1.jpg)
+
+    In the PowerShell pane, enter the following commands to run the code:
+
+    ```PowerShell
+    cd ai-900
+    ```
+    
+    ```PowerShell
+    ./analyze-image.ps1 store-camera-1.jpg
+    ```
+
+1. Review the results of the image analysis, which include:
+    - A suggested caption that describes the image.
+    - A list of objects identified in the image.
+    - A list of "tags" that are relevant to the image.
+
+1. Now let's try another image:
+
+    ![An image of person with a shopping basket in a supermarket](media/analyze-images-computer-vision-service/store-camera-2.jpg)
+
+    To analyze the second image, enter the following command:
+
+    ```PowerShell
+    ./analyze-image.ps1 store-camera-2.jpg
+    ```
+
+1. Review the results of the image analysis for the second image.
+
+1. Let's try one more:
+
+    ![An image of person with a shopping cart](media/analyze-images-computer-vision-service/store-camera-3.jpg)
+
+    To analyze the third image, enter the following command:
+
+    ```PowerShell
+    ./analyze-image.ps1 store-camera-3.jpg
+    ```
+
+1. Review the results of the image analysis for the third image.
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
@@ -290,9 +156,15 @@ Now you can test your deployed service.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
+### Learn more
+
+This simple app shows only some of the capabilities of the Computer Vision service. To learn more about what you can do with this service, see the [Computer Vision page](https://azure.microsoft.com/services/cognitive-services/computer-vision/).
+
 ### Review
 In this lab, you have completed:
-
-- Create an Azure Machine Learning workspace
-
-### You have successfully completed this lab.
+- Create a Cognitive Services resource
+- Run Cloud Shell
+- Configure and run a client application
+  
+## You have successfully completed this lab.
+  
