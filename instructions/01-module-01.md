@@ -34,10 +34,10 @@ Before using the studio, you need to associate an Azure AI services resource wit
 <img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/eed82272-c68d-4557-abeb-3723346b9e2d"> 
 
 1. On the *Create Content Safety* page in the [Azure Portal](https://portal.azure.com?auzre-portal=true), you need to configure several details to create your resource. Configure it with the following settings:
-    - **Subscription**: *Your Azure subscription*.
-    - **Resource group**: *Select or create a resource group with a unique name*.
-    - **Region**: *Choose any available region*.
-    - **Name**: *Enter a unique name*.
+    - **Subscription**: *Use the existing Azure subscription*.
+    - **Resource group**: Select **AI-900-Module-01-<inject key="DeploymentID" enableCopy="false"/>**
+    - **Region**: Select **<inject key="location" enableCopy="false"/>**
+    - **Name**: Enter **contentsafety<inject key="DeploymentID" enableCopy="false"/>**.
     - **Pricing tier**: Free F0
 
 1. Select **Review + Create** and review the configuration. Then select **Create**. The screen will indicate when the deployment is complete. 
