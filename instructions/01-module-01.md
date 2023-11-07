@@ -1,14 +1,6 @@
 # Module 01: Explore Azure AI services
 
-> **Important**
-> **The Anomaly Detector lab has been deprecated and replaced by the update below.**
-
-Azure AI services help users create AI applications with out-of-the-box and pre-built and customizable APIs and models. In this exercise you will take a look at one of the services, Azure AI Content Safety, in the Content Safety Studio. 
-
-The Content Safety Studio enables you to explore how text and image content can be moderated. You can run tests on sample text or images and get a severity score ranging from safe to high for each category. In this lab exercise you will create a single-service resource in the Content Safety Studio and test its functionalities. 
-
-> **Note**
-> The goal of this exercise is to get a general sense of how Azure AI services are provisioned and used. Content Safety is used as an example, but you are not expected to gain a comprehensive knowledge of content safety in this exercise!
+ The goal of this exercise is to get a general sense of how Azure AI services are provisioned and used. Content Safety is used as an example, but you are not expected to gain a comprehensive knowledge of content safety in this exercise!
 
 ## Navigate the Content Safety Studio 
 <img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/86fcbdb7-41b3-4652-88fe-2f293581798d">
@@ -72,3 +64,7 @@ These capabilities you tested can be programmed into all sorts of applications. 
 1. In the Azure Portal, you will see that these are the *same* endpoint and *different* keys for your resource. To check it out, head to the [Azure Portal](https://portal.azure.com?auzre-portal=true). Search for *Content Safety* on the top search bar. Find your resource and click on it. On the left-hand menu, look under *Resource Management* for *Keys and Endpoints*. Select **Keys and Endpoints** to view the endpoint and keys for your resource. 
 
 After you have finished, you can delete the Content Safety resource from the Azure Portal. Deleting the resource is a way to reduce costs that accrue when the resource exists in the subscription. To do this, navigate to the **Overview** page of your Content Safety resource. Select **Delete** at the top of the screen. 
+
+## Reference Link
+
+https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview
