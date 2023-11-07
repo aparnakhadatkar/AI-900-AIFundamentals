@@ -19,7 +19,7 @@ In this lab, you will perform:
 
 1. Open [Bing.com](https://www.bing.com?azure-portal=true) and sign in Microsoft account.
 
-   - **Username:** odl_user_<inject key="DeploymentID" enableCopy="false" />
+   - **Username:** odl_user_<inject key="DeploymentID" enableCopy="false" />@outlook.com
 
    - **Password**: <inject key="DeploymentID" enableCopy="false" />
 

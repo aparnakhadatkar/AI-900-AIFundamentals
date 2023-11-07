@@ -80,7 +80,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. On the create account page enter details as shown in the below picture:
 
-    - **Username:** odl_user_<inject key="DeploymentID" enableCopy="false" />
+    - **Username:** odl_user_<inject key="DeploymentID" enableCopy="false" />@outlook.com
 
     ![](media/13.png)
 
