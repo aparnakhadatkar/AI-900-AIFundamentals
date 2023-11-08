@@ -1,16 +1,24 @@
 # Module 01: Explore Azure AI services
 
-Azure AI services help users create AI applications with out-of-the-box and pre-built and customizable APIs and models. In this exercise you will take a look at one of the services, Azure AI Content Safety, in the Content Safety Studio. 
+## Lab overview
 
-The Content Safety Studio enables you to explore how text and image content can be moderated. You can run tests on sample text or images and get a severity score ranging from safe to high for each category. In this lab exercise you will create a single-service resource in the Content Safety Studio and test its functionalities. 
+In this exercise, you will set up a single-service resource in Azure AI Content Safety Studio to evaluate and moderate text and image content, providing severity scores for various categories, ranging from safe to high.
+
+## Lab objectives
+In this lab, you will perform:
+- Exploring the Content Safety Studio
+- Associating a resource with the studio 
+- Trying out text moderation in the Content Safety Studio
+- Checking out the keys and endpoint
 
 > **Note**
 > The goal of this exercise is to get a general sense of how Azure AI services are provisioned and used. Content Safety is used as an example, but you are not expected to gain a comprehensive knowledge of content safety in this exercise!
 
-## Navigate the Content Safety Studio 
+## Exercise 1: Explore Azure AI services
+
+### Task 1: Explore the Content Safety Studio 
 
 <img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/86fcbdb7-41b3-4652-88fe-2f293581798d">
-
 
 1. Open the [Content Safety Studio](https://contentsafety.cognitive.azure.com?azure-portal=true). If you are not logged in, you will need to sign in. Select **Sign In** on the top right of the screen. Use the email and password provided in the Environment Details tab to sign in. 
 
@@ -18,7 +26,7 @@ The Content Safety Studio enables you to explore how text and image content can 
 
 <img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/3806d9ef-1cb1-45b7-8b63-ae5d8226b27e">  
 
-## Associate a resource with the studio 
+### Task 2: Associate a resource with the studio 
 
 Before using the studio, you need to associate an Azure AI services resource with the studio. Depending on the studio, you may find you need a specific single-service resource, or can use a general multi-service resource. In the case of the Content Safety Studio, you can use the service by creating a single-service *Content Safety* resource or *Azure AI services* general multi-service resource. In the steps below, we will create a single-service Content Safety resource. 
 
@@ -50,7 +58,7 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
 3. On the Content Safety Studio's Settings page, select the Azure AI service resource you just created and click **Use resource** on the bottom of the screen. You will be taken back to the studio home page. Now you can begin using the studio with your newly created resource.
 
-## Try out text moderation in the Content Safety Studio
+### Task 3: Try out text moderation in the Content Safety Studio
 
 1. On the Content Safety Studio home page, under *Run moderation tests*, navigate to the **Moderate text content** box and click **Try it out**.
 2. Under run a simple test, click **Safe Content**. Notice that text is displayed in the box below. 
@@ -61,12 +69,21 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
 You can run tests on all the samples provided, then inspect the results.
 
-## Check out the keys and endpoint
+### Task 4: Check out the keys and endpoint
 
 These capabilities you tested can be programmed into all sorts of applications. The keys and endpoint used for application development can be found both in the Content Safety Studio and the Azure Portal. 
 
 1. In the Content Safety Studio, navigate back to the **Settings** page, with the *Resources* tab selected. Look for the resource you used. Scroll across to see the endpoint and key for your resource. 
 1. In the Azure Portal, you will see that these are the *same* endpoint and *different* keys for your resource. To check it out, head to the [Azure Portal](https://portal.azure.com?auzre-portal=true). Search for *Content Safety* on the top search bar. Find your resource and click on it. On the left-hand menu, look under *Resource Management* for *Keys and Endpoints*. Select **Keys and Endpoints** to view the endpoint and keys for your resource. 
+
+### Review
+In this lab, you have completed:
+- Explored Content Safety Studio
+- Associate a resource with safety studio
+- Tried out text moderation in the Content Safety Studio
+- Check out the keys and endpoint
+
+## You have successfully completed this lab.
 
 ## Reference Link
 
