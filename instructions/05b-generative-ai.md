@@ -1,3 +1,5 @@
+### Module 5b: Explore generative AI with Bing
+
 ## Lab overview
 
 In this exercise you will explore generative AI with Bing Copilot. 
