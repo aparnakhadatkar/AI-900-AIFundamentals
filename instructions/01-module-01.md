@@ -18,13 +18,30 @@ In this lab, you will perform:
 
 ### Task 1: Explore the Content Safety Studio 
 
-<img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/86fcbdb7-41b3-4652-88fe-2f293581798d">
+1. Open the [Content Safety Studio](https://contentsafety.cognitive.azure.com?azure-portal=true). If you are not logged in, you will need to sign in. Select **Sign In** on the top right of the screen.  
 
-1. Open the [Content Safety Studio](https://contentsafety.cognitive.azure.com?azure-portal=true). If you are not logged in, you will need to sign in. Select **Sign In** on the top right of the screen. Use the email and password provided in the Environment Details tab to sign in. 
+    ![](media/26.png)
 
-2. The Content Safety Studio is set up like many other studios for Azure AI services. On the menu at the top of the screen, click on the icon on the left of *Azure AI*. You will see a drop-down list of other studios designed for development with Azure AI services. You can click on the icon again to hide the list.
+1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
 
-<img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/3806d9ef-1cb1-45b7-8b63-ae5d8226b27e">  
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+ 
+      ![Enter Your Username](media/GettingStarted/sc900-image-1.png)
+ 
+1. Next, provide your password:
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+ 
+       ![Enter Your Password](media/GettingStarted/sc900-image-2.png)
+ 
+1. If prompted to stay signed in, you can click "No."
+
+    ![](media/15.png)
+ 
+
+1. The Content Safety Studio is set up like many other studios for Azure AI services. On the menu at the top of the screen, click on the icon on the left of **Azure AI**. You will see a drop-down list of other studios designed for development with Azure AI services. You can click on the icon again to hide the list.
+
+     ![](media/29.png)  
 
 ### Task 2: Associate a resource with the studio 
 
@@ -32,25 +49,33 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
 1. On the top right of the screen, click on the **Settings** icon. 
 
-<img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/9ccc532e-6ab6-4ea9-854d-b3462de6a05b">  
+   ![](media/26.png)
 
 2. On the **Settings** page, you will see a *Directory* tab and *Resource* tab. On the *Resource* tab, select **Create a new resource**. This takes you to page to create a resource in the Azure Portal.
 
-> **Note**
-> The *Directory* tab allows users to select different directories from which to create resources. You do not need to change its settings unless you wish to use a different directory. 
+    ![](media/27.png)
 
-<img src ="https://github.com/CloudLabs-MOC/AI-900-AIFundamentals/assets/95687117/eed82272-c68d-4557-abeb-3723346b9e2d"> 
+   > **Note**: The **Directory** tab allows users to select different directories from which to create resources. You do not need to change its settings unless you wish to use a different directory. 
 
 1. On the *Create Content Safety* page in the [Azure Portal](https://portal.azure.com?auzre-portal=true), you need to configure several details to create your resource. Configure it with the following settings:
-    - **Subscription**: *Use the existing Azure subscription*.
-    - **Resource group**: Select **AI-900-Module-01-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Region**: Select **<inject key="location" enableCopy="false"/>**
-    - **Name**: Enter **contentsafety<inject key="DeploymentID" enableCopy="false"/>**.
-    - **Pricing tier**: Free F0
+    - **Subscription (1)**: Use the existing Azure subscription.
+    - **Resource group (2)**: Select **AI-900-Module-01-<inject key="DeploymentID" enableCopy="false"/>**
+    - **Region (3)**: Select **<inject key="location" enableCopy="false"/>**
+    - **Name (4)**: Enter **contentsafety<inject key="DeploymentID" enableCopy="false"/>**
+    - **Pricing tier (5)**:Select **Free F0** from the drop-down.
+    - Select **Review + Create (6)**
 
-1. Select **Review + Create** and review the configuration. Then select **Create**. The screen will indicate when the deployment is complete. 
+      ![](media/25.png)
+
+1. Review the configuration. Then select **Create**. The screen will indicate when the deployment is complete. 
 
 *Congrats! You've just created, or provisioned, an Azure AI services resource. The one you provisioned in particular is a single-service Content Safety service resource.*
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 1. When the deployment is complete, open up a new tab and return to the [Content Safety Studio](https://contentsafety.cognitive.azure.com?azure-portal=true). 
 
