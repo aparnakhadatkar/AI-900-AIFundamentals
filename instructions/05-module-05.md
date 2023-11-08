@@ -95,8 +95,9 @@ This simple search index only some of the capabilities of the Azure Cognitive Se
 
 ### Review
 In this lab, you have completed:
-- Used prompts to generate responses
-- Tried image generation and code generation
+- Created outlook account.
+- Used AI with Bing Copilot prompts to generate responses
+- Tried image generation and code generation AI with Bing Copilot.
 
 ## You have successfully completed this lab.
 
