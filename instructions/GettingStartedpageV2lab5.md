@@ -73,7 +73,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
     ![](media/15.png)
       
-1. On **Your Microsoft account brings everything together** click on **continue**.
+1. If prompted **Your Microsoft account brings everything together**, then click on **continue**.
  
     ![](media/16.png)
 
