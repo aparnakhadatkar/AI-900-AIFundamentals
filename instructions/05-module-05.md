@@ -29,7 +29,7 @@ In this lab, you will perform:
 
       ![](media/07.png)
     
-1. Towards the bottom of the screen, you will see a window **Start typing here or drag & drop an image...**. As you enter prompts into the window, Bing Copilot uses the entire conversation thread to return responses. For example, let's try asking a series of questions about traveling. 
+1. Towards the bottom of the screen, you will see a window **Ask me anything...**. As you enter prompts into the window, Bing Copilot uses the entire conversation thread to return responses. For example, let's try asking a series of questions about traveling. 
 
     ![](media/10.png)
 
