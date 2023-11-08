@@ -68,14 +68,14 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 1. Use the arrows and rotate the animal and click on Submit.
 
      ![](media/17.png)
-      
-1. On **Your Microsoft account brings everything together** click on **continue**.
- 
-    ![](media/16.png)
 
 1. If prompted to stay signed in, you can click **No**.
 
     ![](media/15.png)
+      
+1. On **Your Microsoft account brings everything together** click on **continue**.
+ 
+    ![](media/16.png)
 
 1. Select the **profile (1)** icon in the Edge toolbar and then select **Sign in to sync data (2)**.
 
