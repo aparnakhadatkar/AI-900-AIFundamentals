@@ -21,7 +21,7 @@ In this lab, you will perform:
 
    - **Username:** odl_user_<inject key="DeploymentID" enableCopy="false" />@outlook.com
 
-   - **Password**: <inject key="DeploymentID" enableCopy="false" />
+   - **Password**: <inject key="AzureAdUserPassword"></inject>
 
    >**Note**: While you can sign in with your work or school account, you will see a slightly different user experience compared to signing in with your personal account. Using your work or school account, you will see Bing Enterprise chat. 
 
