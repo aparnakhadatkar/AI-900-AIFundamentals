@@ -1,4 +1,4 @@
-### Module 5b: Explore generative AI with Bing
+# Module 5b: Explore generative AI with Bing
 
 ## Lab overview
 
