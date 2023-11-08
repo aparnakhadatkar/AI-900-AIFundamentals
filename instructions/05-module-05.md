@@ -4,11 +4,10 @@ In this exercise you will explore generative AI with Bing Copilot.
 
 ## Lab objectives
 In this lab, you will perform:
-- Use prompts to generate responses
-- Try image generation
-- Try code generation
-- Bonus 
-
+- Use AI with Bing Copilot prompts to generate responses
+- Try image generation using AI with Bing Copilot
+- Try code generation using AI with Bing Copilot
+  
 ## Estimated timing: 30 minutes
 
 ## Architecture Diagram
