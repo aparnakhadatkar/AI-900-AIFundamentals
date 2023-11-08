@@ -46,7 +46,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. On the create a password page enter details as shown in the below picture:
 
-    - **Password**: <inject key="DeploymentID" enableCopy="false" />
+    - **Password**: <inject key="AzureAdUserPassword"></inject>
 
       ![](media/22.png)
 
@@ -80,7 +80,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. On the create account page enter details as shown in the below picture:
 
-    - **Username:** odl_user_<inject key="DeploymentID" enableCopy="false" />@outlook.com
+    - **New email:** odl_user_<inject key="DeploymentID" enableCopy="false" />@outlook.com
 
     ![](media/13.png)
 
