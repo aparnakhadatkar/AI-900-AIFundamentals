@@ -40,7 +40,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. On the create account page enter details as shown in the below picture:
 
-    - **Username:** odl_user_<inject key="DeploymentID" enableCopy="false" />
+    - **New email:** odl_user_<inject key="DeploymentID" enableCopy="false" />
 
       ![](media/23.png)
 
@@ -80,15 +80,15 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. On the create account page enter details as shown in the below picture:
 
-    - **New email:** odl_user_<inject key="DeploymentID" enableCopy="false" />@outlook.com
+    - **Username email:** odl_user_<inject key="DeploymentID" enableCopy="false" />@outlook.com
 
-    ![](media/13.png)
+      ![](media/13.png)
 
 1. On the create a password page enter details as shown in the below picture:
 
     - **Password**: <inject key="AzureAdUserPassword"></inject>
 
-   ![](media/12.png)
+     ![](media/12.png)
 
 1. On **Use this account everywhere on your device** click on **Next**.
 
