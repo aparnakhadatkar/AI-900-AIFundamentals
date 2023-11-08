@@ -24,7 +24,7 @@ In this lab, you will perform:
 
 1. Open the [Content Safety Studio](https://contentsafety.cognitive.azure.com?azure-portal=true). If you are not logged in, you will need to sign in. Select **Sign In** on the top right of the screen.  
 
-    ![](media/26.png)
+    ![](media/28.png)
 
 1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
 
@@ -41,7 +41,6 @@ In this lab, you will perform:
 1. If prompted to stay signed in, you can click "No."
 
     ![](media/15.png)
- 
 
 1. The Content Safety Studio is set up like many other studios for Azure AI services. On the menu at the top of the screen, click on the icon on the left of **Azure AI**. You will see a drop-down list of other studios designed for development with Azure AI services. You can click on the icon again to hide the list.
 
