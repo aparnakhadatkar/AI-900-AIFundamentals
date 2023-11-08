@@ -86,7 +86,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. On the create a password page enter details as shown in the below picture:
 
-    - **Password**: <inject key="DeploymentID" enableCopy="false" />
+    - **Password**: <inject key="AzureAdUserPassword"></inject>
 
    ![](media/12.png)
 
