@@ -1,4 +1,4 @@
-# Module 05: Explore Knowledge Mining
+# Module 05a: Explore Knowledge Mining
 
 ## Lab overview
 
