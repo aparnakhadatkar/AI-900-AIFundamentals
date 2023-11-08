@@ -52,7 +52,10 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. Enter your **first (1)** and **last (2)** name in the provided fields and click on **Next (3)**.
 
-     ![](media/21.png)
+   - **First Name** : ODL
+   - **Last Name** : USER
+
+       ![](media/21.png)
 
 1. Select your **country** and **date of birth** then click on **Next**.
 
