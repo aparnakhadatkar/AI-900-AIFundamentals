@@ -92,7 +92,7 @@ In this lab, you will perform:
    
 ## Learn more
 
-This simple search index only some of the capabilities of the Azure Cognitive Search service. To learn more about what you can do with this service, see the [Explore generative AI with Bing](https://www.microsoft.com/en-us/bing?form=MW00X7&ef_id=_k_EAIaIQobChMI3t6F3NqxggMVSKRmAh2VAAF2EAAYAiAAEgL22vD_BwE_k_&OCID=AIDcmmn005jwr7_SEM__k_EAIaIQobChMI3t6F3NqxggMVSKRmAh2VAAF2EAAYAiAAEgL22vD_BwE_k_&gad_source=1&gclid=EAIaIQobChMI3t6F3NqxggMVSKRmAh2VAAF2EAAYAiAAEgL22vD_BwE).
+This simple search index only some of the capabilities of the AI with Bing. To learn more about what you can do with this service, see the [Explore generative AI with Bing](https://www.microsoft.com/en-us/bing?form=MW00X7&ef_id=_k_EAIaIQobChMI3t6F3NqxggMVSKRmAh2VAAF2EAAYAiAAEgL22vD_BwE_k_&OCID=AIDcmmn005jwr7_SEM__k_EAIaIQobChMI3t6F3NqxggMVSKRmAh2VAAF2EAAYAiAAEgL22vD_BwE_k_&gad_source=1&gclid=EAIaIQobChMI3t6F3NqxggMVSKRmAh2VAAF2EAAYAiAAEgL22vD_BwE).
 
 ### Review
 In this lab, you have completed:

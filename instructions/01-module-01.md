@@ -1,4 +1,4 @@
-# Module 01: Explore Azure AI services
+# Module 01:  Explore the Content Safety Studio 
 
 ## Lab overview
 
@@ -18,7 +18,7 @@ In this lab, you will perform:
 > **Note**
 > The goal of this exercise is to get a general sense of how Azure AI services are provisioned and used. Content Safety is used as an example, but you are not expected to gain a comprehensive knowledge of content safety in this exercise!
 
-## Exercise 1: Explore Azure AI services
+## Exercise 1:  Explore the Content Safety Studio 
 
 ### Task 1: Explore the Content Safety Studio 
 
@@ -109,12 +109,15 @@ These capabilities you tested can be programmed into all sorts of applications. 
 ### Review
 In this lab, you have completed:
 - Explored Content Safety Studio
-- Associate a resource with safety studio
+- Associated a resource with safety studio
 - Tried out text moderation in the Content Safety Studio
-- Check out the keys and endpoint
+- Checked out the keys and endpoint
 
 ## You have successfully completed this lab.
 
 ## Reference Link
 
-https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview
+
+## Learn more
+
+This simple search index only some of the capabilities of the Content Safety Studio. To learn more about what you can do with this service, see the [ Explore the Content Safety Studio ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview).
