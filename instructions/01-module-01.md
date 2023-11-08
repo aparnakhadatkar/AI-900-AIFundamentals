@@ -72,9 +72,9 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
 1. Review the configuration. Then select **Create**. The screen will indicate when the deployment is complete. 
 
-*Congrats! You've just created, or provisioned, an Azure AI services resource. The one you provisioned in particular is a single-service Content Safety service resource.*
+   *Congrats! You've just created, or provisioned, an Azure AI services resource. The one you provisioned in particular is a single-service Content Safety service resource.*
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
     > - Hit the Validate button for the corresponding task.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
@@ -84,7 +84,9 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
 2. Select the **Settings** icon on the top right of the screen again. This time you should see that your newly created resource has been added to the list.  
 
-3. On the Content Safety Studio's Settings page, select the Azure AI service resource you just created and click **Use resource** on the bottom of the screen. You will be taken back to the studio home page. Now you can begin using the studio with your newly created resource.
+3. On the Content Safety Studio's Settings page, select the **Azure AI service (1)** resource you just created and click **Use resource (2)** on the bottom of the screen. You will be taken back to the studio home page. Now you can begin using the studio with your newly created resource.
+
+   ![](media/30.png)
 
 ### Task 3: Try out text moderation in the Content Safety Studio
 
