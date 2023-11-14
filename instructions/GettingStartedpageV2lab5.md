@@ -30,6 +30,20 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
 ![Manage Your Virtual Machine](media/GettingStarted/res.png)
 
+## **Lab Duration Extension**
+
+1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
+
+    ![Manage Your Virtual Machine](media/gext.png)
+
+    >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
+
+2. Click **OK** to extend your lab duration.
+ 
+   ![Manage Your Virtual Machine](media/gext2.png)
+
+3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed.
+
 ## Creating outlook account
 
 1. On your virtual machine visit the Outlook sign-up page: Open your egde browser and go to the Outlook sign-up page. You can do this by visiting https://outlook.live.com/.
@@ -42,13 +56,13 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
     - **New email:** odl_user_<inject key="DeploymentID" enableCopy="false" />
 
-      ![](media/23.png)
+        ![](media/23.png)
 
 1. On the create a password page enter details as shown in the below picture:
 
     - **Password**: <inject key="AzureAdUserPassword"></inject>
 
-      ![](media/22.png)
+        ![](media/22.png)
 
 1. Enter your **first (1)** and **last (2)** name in the provided fields and click on **Next (3)**.
 
