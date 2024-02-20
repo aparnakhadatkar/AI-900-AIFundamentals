@@ -46,6 +46,7 @@ If you haven't already done so, create a **Cognitive Services** resource in your
     - **Pricing tier**: Standard S0 **(5)**
     - **By checking this box I acknowledge that I have read and understood all the terms below**: Select the checkbox. **(6)**
 
+
 1. Click on **Review + Create (7)**.
    
      ![](media/ai900mod4bimg.png)
