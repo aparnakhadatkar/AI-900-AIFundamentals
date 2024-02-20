@@ -102,7 +102,8 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The editor containing code to use the Translator service](media/translate-code-4b.png)
 
-1. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Cognitive Services resource. Copy the values of **KEY 1** and **Location/Region** value from *Keys and Endpoints* page for your resource from the Azure portal and paste them into the code editor.
+1. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Cognitive Services resource. Copy the values of **KEY 1** and **Location/Region** value from the *Keys and Endpoints* page for your resource from the Azure portal and paste them into the code editor.
+   
      ![Find the key and endpoint tab in your Cognitive Services resource's left hand pane.](media/lab4b-1.png)
 
      > **Note:** The Translator service does not require the use of the Cognitive Service endpoint, so there is no need to modify the Translator service endpoint. Instead, a dedicated global endpoint is available specifically for the Translator service. 
@@ -113,13 +114,13 @@ Now that you have a custom model, you can run a simple client application that u
     - Translate text from English into French, Italian, and Chinese.
     - Translate audio from English into text in French
 
-    Use the below link to hear the input audio which will be processed by this application and translates:
+    Use the below link to hear the input audio which will be processed by this application and translated:
    
        https://www.microsoft.com/videoplayer/embed/RWORN0
 
-    >**Note**: Copy the above link to your browser, and listen to the audio file. Do not use the Lab VM browser.
-
-    >**Note**: A real application could accept the input from a microphone and send the response to a speaker, but in this simple example, we'll use pre-recorded input in an audio file.
+    > - **Note**: You can use the **Ctrl+S** and **Ctrl+Q** of your keyboard keys to save and close editor. 
+    > - **Note**: Copy the above link to your browser, and listen to the audio file. Do not use the Lab VM browser.
+    > - **Note**: A real application could accept the input from a microphone and send the response to a speaker, but in this simple example, we'll use pre-recorded input in an audio file.
     
 1. In the Cloud Shell pane, enter the following command to run the code:
 
@@ -131,7 +132,7 @@ Now that you have a custom model, you can run a simple client application that u
 1. Review the output. Did you see the translation from the text in English to French, Italian, and Chinese?  Did you see the English audio "hello" translated into text in French?
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
    > - Hit the Validate button for the corresponding task.
    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
